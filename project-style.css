@@ -1,22 +1,22 @@
 #sisse {
-	background: url('images/v2rav.png') no-repeat center;
+	/*background: url('images/v2rav.png') no-repeat center;*/
 	display: inline-block;
 	width: 100%;
 	padding:235px 0px;
 	text-align: center;
 	text-decoration: none;
-	color: gold;
+	color: BLACK;
 	font-weight: bold;
 	font-size: 30px;
 	text-shadow:0px 0px 10px black;
 }
 
 body {
-	background: skyblue;
+	background: lightgrey;
 	margin:0px;
 }
 #wrap{
-	width: 800px;
+	width: 100%;
 	background: white;
 	margin: auto;
 	overflow: auto;
@@ -24,10 +24,10 @@ body {
 }
 #menu {
 	list-style: none;
-	background: PaleGreen;
+	background: grey;
 	margin: 0px;
 	padding: 0px;
-	text-align: center;
+	text-align: right;
 }
 #menu li, #menu a {
 	display: inline-block;
@@ -45,9 +45,9 @@ body {
 	padding:10px;
 }
 #login{
-	margin:auto;
-	width: 35%;	
-	margin-top:25%;
+	margin: 0 auto;
+	width: 50%;
+	/*margin-top:25%;*/
 }
 .puur {
 	border: dashed grey 2px;
