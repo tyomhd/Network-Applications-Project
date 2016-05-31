@@ -1,8 +1,8 @@
-#sisse {
+#sissebutton {
 	/*background: url('images/v2rav.png') no-repeat center;*/
-	display: inline-block;
-	width: 100%;
-	padding:235px 0px;
+	display: block;
+
+	/*padding:235px 0px;*/
 	text-align: center;
 	text-decoration: none;
 	color: BLACK;
@@ -12,20 +12,31 @@
 	font-family: 'BeonRegular';
 	font-weight: normal;
 	font-style: normal;
+	/*background: transparent;*/
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	/*background: #eee;*/
+	top: 50%;
+	left: 50%;
+	margin: -110px 0 0 -100px;
+	padding: 20px;
+	/*border-radius: 4px;*/
+	box-sizing: border-box;
+	visibility: visible;
 }
 
 body {
 	background: lightgrey;
 	margin:0px;
-	font-family: 'BoonRegular';
-	font-weight: normal;
-	font-style: normal;
+	font-family: 'SourceSansProRegular';
+	font-size: 1.3em;
 }
 #wrap{
 	width: 100%;
-	background: white;
-	margin: auto;
-	overflow: auto;
+	/*background: white;*/
+	/*margin: auto;*/
+	/*overflow: auto;*/
 	min-height:600px;
 }
 #menu {
@@ -48,12 +59,23 @@ body {
 	color: DarkSlateGray;
 }
 #content {
-	padding:10px;
+	/*padding:10px;*/
 }
 #login{
-	margin: 0 auto;
-	width: 50%;
+	/*margin: 0 auto;*/
+	/*width: 50%;*/
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	/*background: #eee;*/
+	top: 50%;
+	left: 50%;
+	margin: -110px 0 0 -100px;
+	padding: 20px;
+	/*border-radius: 4px;*/
+	box-sizing: border-box;
 	/*margin-top:25%;*/
+	visibility: hidden;
 }
 .puur {
 	border: dashed grey 2px;
@@ -71,4 +93,14 @@ body {
 }
 .clear {
 	clear:both;
+}
+#sisse {
+	position: absolute;
+	width: 100%;
+	height: 600px;
+	background-color: #9900FF;
+	/*background-image: url(images/blurnight.jpg);*/
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
 }

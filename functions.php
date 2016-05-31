@@ -36,7 +36,7 @@ function logi(){
 			}
 		}
 	}
-	include_once('views/login.html');
+	/*include_once('views/login.html');*/
 }
 
 function logout(){

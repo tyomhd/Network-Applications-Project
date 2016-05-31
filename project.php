@@ -11,9 +11,9 @@ if (isset($_GET['page']) && $_GET['page']!=""){
 include_once('views/head.html');
 
 switch($page){
-	case "login":
+	/*case "login":
 		logi();
-		break;
+		break;*/
 	case "loomad":
 		kuva_puurid();
 		break;
@@ -24,6 +24,7 @@ switch($page){
 		lisa();
 		break;
 	default:
+		logi();
 		include_once('views/welcome-view.html');
 		break;
 }
