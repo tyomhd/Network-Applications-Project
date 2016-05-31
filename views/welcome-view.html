@@ -2,9 +2,9 @@
     <div id="sissebutton">GET STARTED</div>
     <div id="login">
         <form action="?page=login" method="POST" >
-            <input type="text" name="user" placeholder="kasutajanimi"/><br/>
-            <input type="password" name="pass" placeholder="parool"/><br/>
-            <input type="submit" value="logi sisse!"/>
+            <input type="text" name="user" placeholder="username"/><br/>
+            <input type="password" name="pass" placeholder="password"/><br/>
+            <input type="submit" value="Log in"/>
         </form>
         <?php if (isset($errors)):?>
         <?php foreach($errors as $error):?>
