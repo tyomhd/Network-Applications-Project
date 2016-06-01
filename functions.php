@@ -47,24 +47,28 @@ function logout(){
 
 function kuva_puurid(){
 	global $connection;
-	$puurid = array();
+	//$puurid = array();
 
 	if(isset($_SESSION["user"])) {
-		$distinct_puur = "SELECT DISTINCT puur FROM al1213_loomaaed ORDER BY puur ASC";
+		/*$distinct_puur = "SELECT DISTINCT day FROM alikhach_users_test";
 		$result = mysqli_query($connection, $distinct_puur);
 		while ($row = $result->fetch_assoc()) {
 
-			$select_puur = "SELECT * FROM al1213_loomaaed WHERE  puur=" . $row['puur'];
+			$select_puur = "SELECT * FROM alikhach_users_test WHERE  day=" . $row['day'];
 			$result2 = mysqli_query($connection, $select_puur);
 
 			while ($row2 = $result2->fetch_assoc()) {
-				$puurid[$row['puur']][] = $row2;
+				$puurid[$row['day']][] = $row2;
 			}
-		}
+		}*/
+
+		$select_dates = "SELECT * FROM alikhach_users_".$_SESSION["user"];
+		$result = mysqli_query($connection, $select_dates);
+
 	} else {
-		header("Location: ?page=login");
+		header("Location: ?");
 	}
-	include_once('views/content.html');
+	include_once('views/dailylog.html');
 }
 
 function lisa(){

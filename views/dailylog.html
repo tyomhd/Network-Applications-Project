@@ -1,0 +1,18 @@
+<div id="backbg">
+<div>College project</div>
+    <?php
+echo "<table border='1'>
+    <tr>
+        <td><b>Date</b></td>
+        <td><b>Food</b> </td>
+        <td><b>Weight</b> </td>
+    </tr>";
+    while($row = $result->fetch_assoc()) {
+    echo "<tr>
+    <td>".$row['day']."</td>
+    <td>".$row['food_id']."</td>
+    <td>".$row['weight']."</td>
+</tr>";}
+    echo "</table>";
+?>
+</div>
