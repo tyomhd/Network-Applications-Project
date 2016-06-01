@@ -44,7 +44,14 @@ function logout(){
 	session_destroy();
 	header("Location: ?");
 }
-
+/*
+function deleteFromTable($id){
+	global $connection;
+	$delete = "DELETE FROM alikhach_users_".$_SESSION["user"]." WHERE ID=".$id;
+	$result = mysqli_query($connection, $delete);
+	include_once('views/dailylog.html');
+}
+*/
 function kuva_puurid(){
 	global $connection;
 	//$puurid = array();
@@ -140,5 +147,4 @@ function upload($name){
 		return "";
 	}
 }
-
 ?>

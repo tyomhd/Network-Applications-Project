@@ -8,6 +8,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project-style.css" afterPath="$PROJECT_DIR$/project-style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.php" afterPath="$PROJECT_DIR$/project.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/content.html" afterPath="$PROJECT_DIR$/views/content.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/dailylog.html" afterPath="$PROJECT_DIR$/views/dailylog.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/foot.html" afterPath="$PROJECT_DIR$/views/foot.html" />
     </list>
     <ignored path="Project.iws" />
@@ -53,16 +54,20 @@
       <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.54717">
-              <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+            <state vertical-scroll-proportion="-14.264151">
+              <caret line="148" column="1" selection-start-line="148" selection-start-column="1" selection-end-line="148" selection-end-column="1" />
               <folding>
-                <marker date="1464795672413" expanded="true" signature="783:971" placeholder="SELECT id FR... alikhach_kylastajad" />
-                <marker date="1464795672413" expanded="true" signature="1469:1513" placeholder="SELECT DISTI... alikhach_users_test" />
-                <marker date="1464795672413" expanded="true" signature="1633:1678" placeholder="SELECT * FRO... alikhach_users_test" />
-                <marker date="1464795672413" expanded="true" signature="1633:1693" placeholder="SELECT * FRO... alikhach_users_test" />
-                <marker date="1464795672413" expanded="true" signature="1863:1892" placeholder="SELECT * FRO... alikhach_users_test" />
-                <marker date="1464795672413" expanded="true" signature="1863:1911" placeholder="SELECT * FRO... alikhach_users_" />
-                <marker date="1464795672413" expanded="true" signature="2849:2919" placeholder="INSERT INTO al1213_loomaaed... " />
+                <marker date="1464800027984" expanded="true" signature="783:971" placeholder="SELECT id FR... alikhach_kylastajad" />
+                <marker date="1464800027984" expanded="true" signature="1413:1440" placeholder="DELETE FROM " />
+                <marker date="1464800027984" expanded="true" signature="1413:1442" placeholder="DELETE FROM " />
+                <marker date="1464800027984" expanded="true" signature="1413:1471" placeholder="DELETE FROM " />
+                <marker date="1464800027984" expanded="true" signature="1690:1734" placeholder="SELECT DISTI... alikhach_users_test" />
+                <marker date="1464800027984" expanded="true" signature="1854:1899" placeholder="SELECT * FRO... alikhach_users_test" />
+                <marker date="1464800027984" expanded="true" signature="1854:1914" placeholder="SELECT * FRO... alikhach_users_test" />
+                <marker date="1464800027984" expanded="true" signature="2084:2113" placeholder="SELECT * FRO... alikhach_users_test" />
+                <marker date="1464800027984" expanded="true" signature="2084:2132" placeholder="SELECT * FRO... alikhach_users_" />
+                <marker date="1464800027984" expanded="true" signature="3070:3140" placeholder="INSERT INTO al1213_loomaaed... " />
+                <marker date="1464800027984" expanded="true" signature="4386:4389" placeholder="DELETE FROM " />
               </folding>
             </state>
           </provider>
@@ -78,32 +83,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dailylog.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dailylog.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/dailylog.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33924612">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state vertical-scroll-proportion="-13.730769">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="head.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/head.html">
+      <file leaf-file-name="deleterow.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/deleterow.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.153846">
-              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="49" />
-              <folding />
+            <state vertical-scroll-proportion="0.26385808">
+              <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+              <folding>
+                <marker date="1464800213750" expanded="true" signature="329:370" placeholder="DELETE FROM " />
+                <marker date="1464800213750" expanded="true" signature="329:379" placeholder="DELETE FROM " />
+                <marker date="1464800213750" expanded="true" signature="329:556" placeholder="DELETE FROM " />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="foot.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/foot.html">
+      <file leaf-file-name="input-form.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/input-form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.576923">
-              <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-              <folding />
+            <state vertical-scroll-proportion="-6.5384617">
+              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -112,7 +123,7 @@
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="70" selection-start-line="19" selection-start-column="70" selection-end-line="19" selection-end-column="70" />
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -161,14 +172,15 @@
         <option value="$PROJECT_DIR$/particles.json" />
         <option value="$PROJECT_DIR$/views/foot.html" />
         <option value="$PROJECT_DIR$/views/head.html" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/project.php" />
         <option value="$PROJECT_DIR$/views/about.html" />
         <option value="$PROJECT_DIR$/views/author.html" />
         <option value="$PROJECT_DIR$/project-style.css" />
         <option value="$PROJECT_DIR$/views/content.html" />
+        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/functions.php" />
         <option value="$PROJECT_DIR$/views/dailylog.html" />
+        <option value="$PROJECT_DIR$/deleterow.php" />
       </list>
     </option>
   </component>
@@ -348,24 +360,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="70" selection-start-line="19" selection-start-column="70" selection-end-line="19" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/input-form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5384617">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/head.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.153846">
@@ -378,14 +372,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.3076923">
           <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.056604">
-          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -406,6 +392,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/input-form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.5384617">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.056604">
+          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/content.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.1923075">
@@ -416,25 +428,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.54717">
-          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+        <state vertical-scroll-proportion="-14.264151">
+          <caret line="148" column="1" selection-start-line="148" selection-start-column="1" selection-end-line="148" selection-end-column="1" />
           <folding>
-            <marker date="1464795672413" expanded="true" signature="783:971" placeholder="SELECT id FR... alikhach_kylastajad" />
-            <marker date="1464795672413" expanded="true" signature="1469:1513" placeholder="SELECT DISTI... alikhach_users_test" />
-            <marker date="1464795672413" expanded="true" signature="1633:1678" placeholder="SELECT * FRO... alikhach_users_test" />
-            <marker date="1464795672413" expanded="true" signature="1633:1693" placeholder="SELECT * FRO... alikhach_users_test" />
-            <marker date="1464795672413" expanded="true" signature="1863:1892" placeholder="SELECT * FRO... alikhach_users_test" />
-            <marker date="1464795672413" expanded="true" signature="1863:1911" placeholder="SELECT * FRO... alikhach_users_" />
-            <marker date="1464795672413" expanded="true" signature="2849:2919" placeholder="INSERT INTO al1213_loomaaed... " />
+            <marker date="1464800027984" expanded="true" signature="783:971" placeholder="SELECT id FR... alikhach_kylastajad" />
+            <marker date="1464800027984" expanded="true" signature="1413:1440" placeholder="DELETE FROM " />
+            <marker date="1464800027984" expanded="true" signature="1413:1442" placeholder="DELETE FROM " />
+            <marker date="1464800027984" expanded="true" signature="1413:1471" placeholder="DELETE FROM " />
+            <marker date="1464800027984" expanded="true" signature="1690:1734" placeholder="SELECT DISTI... alikhach_users_test" />
+            <marker date="1464800027984" expanded="true" signature="1854:1899" placeholder="SELECT * FRO... alikhach_users_test" />
+            <marker date="1464800027984" expanded="true" signature="1854:1914" placeholder="SELECT * FRO... alikhach_users_test" />
+            <marker date="1464800027984" expanded="true" signature="2084:2113" placeholder="SELECT * FRO... alikhach_users_test" />
+            <marker date="1464800027984" expanded="true" signature="2084:2132" placeholder="SELECT * FRO... alikhach_users_" />
+            <marker date="1464800027984" expanded="true" signature="3070:3140" placeholder="INSERT INTO al1213_loomaaed... " />
+            <marker date="1464800027984" expanded="true" signature="4386:4389" placeholder="DELETE FROM " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/dailylog.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33924612">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state vertical-scroll-proportion="-13.730769">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deleterow.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26385808">
+          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+          <folding>
+            <marker date="1464800213750" expanded="true" signature="329:370" placeholder="DELETE FROM " />
+            <marker date="1464800213750" expanded="true" signature="329:379" placeholder="DELETE FROM " />
+            <marker date="1464800213750" expanded="true" signature="329:556" placeholder="DELETE FROM " />
+          </folding>
         </state>
       </provider>
     </entry>
