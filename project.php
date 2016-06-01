@@ -29,6 +29,9 @@ switch($page){
 	case "lisa":
 		lisa();
 		break;
+	case "add";
+		addrow();
+		break;
 	default:
 		logi();
 		include_once('views/welcome-view.html');

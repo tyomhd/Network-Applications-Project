@@ -147,4 +147,16 @@ function upload($name){
 		return "";
 	}
 }
+function addrow(){
+	global $connection;
+	$weight = $_POST["weight"];
+	$date = $_POST["datepicker"];
+	$id = $_POST["id"];
+
+	$add = "INSERT INTO alikhach_users_test (food_id, day, weigth) VALUES ($id,$date,$weight)";
+	$result = mysqli_query($connection, $add);
+	if ($result) {
+		header('Location: http://enos.itcollege.ee/~alikhach/Vorgurakendused1/Project/project.php?page=loomad');
+	}
+}
 ?>
