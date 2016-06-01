@@ -14,6 +14,12 @@ switch($page){
 	/*case "login":
 		logi();
 		break;*/
+	case "author":
+		include_once('views/author.html');
+		break;
+	case "about":
+		include_once('views/about.html');
+		break;
 	case "loomad":
 		kuva_puurid();
 		break;
@@ -30,5 +36,4 @@ switch($page){
 }
 
 include_once('views/foot.html');
-
 ?>
