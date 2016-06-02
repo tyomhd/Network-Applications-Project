@@ -12,6 +12,7 @@ $q=$_GET["q"];
 //lookup all links from the xml file if length of q>0
 if (strlen($q)>0) {
     $hint="";
+
     for($i=0; $i<($x->length); $i++) {
         $z=$x->item($i)->getElementsByTagName('ID');
         $y=$x->item($i)->getElementsByTagName('Name-eng');
@@ -19,15 +20,15 @@ if (strlen($q)>0) {
             //find a link matching the search text
             if (stristr($y->item(0)->childNodes->item(0)->nodeValue,$q)) {
                 if ($hint=="") {
-                    $hint="<a href='http://enos.itcollege.ee/~alikhach/Vorgurakendused1/Project/addrow.php?id=" .
+                    $hint="<option value='" .
                         $z->item(0)->childNodes->item(0)->nodeValue .
                         "'>" .
-                        $y->item(0)->childNodes->item(0)->nodeValue . "</a>";
+                        $y->item(0)->childNodes->item(0)->nodeValue . "</option>";
                 } else {
-                    $hint=$hint . "<br /><a href='http://enos.itcollege.ee/~alikhach/Vorgurakendused1/Project/addrow.php?id=" .
+                    $hint=$hint . "<option value='" .
                         $z->item(0)->childNodes->item(0)->nodeValue .
                         "'>" .
-                        $y->item(0)->childNodes->item(0)->nodeValue . "</a>";
+                        $y->item(0)->childNodes->item(0)->nodeValue . "</option>";
                 }
             }
         }
@@ -37,7 +38,7 @@ if (strlen($q)>0) {
 // Set output to "no suggestion" if no hint was found
 // or to the correct values
 if ($hint=="") {
-    $response="no suggestion";
+    $response="<option>no suggestion</option>";
 } else {
     $response=$hint;
 }

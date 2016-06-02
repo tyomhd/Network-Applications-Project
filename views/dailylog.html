@@ -11,17 +11,38 @@ echo "<table border='1'>
     while($row = $result->fetch_assoc()) {
     echo "<tr>
     <td>".$row['day']."</td>
-    <td>".$row['food_id']."</td>
+    <td>".$row['foodname']."</td>
     <td>".$row['weight']."</td>
     <td><a href='http://enos.itcollege.ee/~alikhach/Vorgurakendused1/Project/deleterow.php?id=" . $row['id'] . "'>del</a></td>
 
 </tr>";}
     echo "</table>";
 ?>
-
-
-    <form>
-        <input type="text" size="30" onkeyup="showResult(this.value)">
-        <div id="livesearch"></div>
+    <h5>Search for food:</h5>
+    <input type="text" size="30" onkeyup="showResult(this.value)"/>
+    <form action="?page=add" method="POST">
+        <h5>Choose from result:</h5>
+        <select name="foodid" id="livesearch"></select>
+        <h5>Date (yyyy-mm-dd) :</h5>
+        <!--<input type="text" name="datepicker" value="01.06.2016"/>-->
+        <!--<input id="input_date" size="12" placeholder="dd/mm/yyyy" name="nutdate" type="text"/>-->
+        <select name="day">
+            <?php for ($i = 1; $i <= 31; $i++) : ?>
+            <option value="<?= $i ?>"><?= $i ?></option>
+            <?php endfor ?>
+        </select>
+        <select name="month">
+            <?php for ($i = 1; $i <= 12; $i++) : ?>
+            <option value="<?= $i ?>"><?= $i ?></option>
+            <?php endfor ?>
+        </select>
+        <select name="year">
+            <?php for ($i = 2015; $i <= date('Y'); $i++) : ?>
+            <option value="<?= $i ?>"><?= $i ?></option>
+            <?php endfor ?>
+        </select>
+        <h5>Amount (g) :</h5>
+        <input type="number" name="amount"/>
+        <input type="submit" onsubmit="checkForm(this)">
     </form>
 </div>
