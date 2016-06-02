@@ -35,9 +35,6 @@ switch($page){
 	case "delete":
 		deleterow();
 		break;
-	case "graph":
-		createGraph();
-		break;
 	case "dailylog":
 		createdailylog();
 		break;

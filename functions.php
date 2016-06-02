@@ -75,11 +75,6 @@ function kuva_puurid(){
 		$select_dates = "SELECT * FROM alikhach_users_".$_SESSION["user"];
 		$result = mysqli_query($connection, $select_dates);
 
-		//$sum = "SELECT  SUM(carbs) AS tcarbs , SELECT SUM(fats) AS tfats , SELECT SUM(prots) AS tprots, SELECT SUM(alcohol) AS talcohol, SELECT SUM(water) AS twater, SELECT SUM(fiber) AS tfiber , SELECT SUM(energy) AS tenergy  FROM alikhach_users_".$_SESSION["user"];
-		//$sum = "SELECT SUM(carbs) AS tcarbs  FROM alikhach_users_".$_SESSION["user"];
-		//$sum = "SELECT  SUM('carbs') AS 'tcarbs' , SELECT SUM('fats') as 'tfats' FROM alikhach_users_".$_SESSION["user"];
-		//$row2 = mysqli_fetch_assoc($result2);
-		//$row2 =  mysqli_fetch_assoc($result2);
 		$tamount = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(weight) AS tamount  FROM alikhach_users_".$_SESSION["user"]))["tamount"];
 		$tcarbs = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(carbs) AS tcarbs  FROM alikhach_users_".$_SESSION["user"]))["tcarbs"];
 		$tfats = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(fats) AS tfats  FROM alikhach_users_".$_SESSION["user"]))["tfats"];
@@ -88,7 +83,6 @@ function kuva_puurid(){
 		$twater = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(water) AS twater  FROM alikhach_users_".$_SESSION["user"]))["twater"];
 		$tfiber = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(fiber) AS tfiber  FROM alikhach_users_".$_SESSION["user"]))["tfiber"];
 		$tenergy = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(energy) AS tenergy  FROM alikhach_users_".$_SESSION["user"]))["tenergy"];
-
 
 	} else {
 		header("Location: ?");

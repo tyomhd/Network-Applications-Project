@@ -21,7 +21,7 @@ window.onload =  function(){
     }
 }
 // source: http://www.w3schools.com/php/php_ajax_livesearch.asp
-function showResult(str) {
+/*function showResult(str) {
     if (str.length==0) {
         document.getElementById("livesearch").innerHTML="";
         document.getElementById("livesearch").style.border="0px";
@@ -41,5 +41,5 @@ function showResult(str) {
     }
     xmlhttp.open("GET","livesearch.php?q="+str,true);
     xmlhttp.send();
-}
+}*/
 

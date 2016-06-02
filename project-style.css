@@ -1,27 +1,19 @@
 #sissebutton {
-	/*background: url('images/v2rav.png') no-repeat center;*/
 	display: block;
-
-	/*padding:235px 0px;*/
 	text-align: center;
 	text-decoration: none;
 	color: #333;
-	/*font-weight: bold;*/
 	font-size: 60px;
-	/*text-shadow:0px 0px 10px black;*/
 	font-family: 'BeonRegular';
 	font-weight: normal;
 	font-style: normal;
-	/*background: transparent;*/
 	position: absolute;
 	width: 400px;
 	height: 200px;
-	/*background: #eee;*/
 	top: 50%;
 	left: 50%;
 	margin: -100px 0 0 -200px;
 	padding: 20px;
-	/*border-radius: 4px;*/
 	box-sizing: border-box;
 	visibility: visible;
 }
@@ -42,18 +34,10 @@ body {
 	background: white;
 	margin: auto;
 	overflow: auto;
-	/*min-height:100%;
-	position: static;
-	left: 50%;
-	margin-left: -512px;*/
-	/*position: relative;*/
 }
 #menu {
-	/*position: relative;*/
 	left: 50%;
-	/*margin-left: -512px;*/
 	height: 44px;
-	/*width: 1024px;*/
 	list-style: none;
 	background: #333;
 	text-align: left;
@@ -70,23 +54,14 @@ body {
 	color: #A8A8A8;
 	cursor: pointer;
 }
-#content {
-	/*padding:10px;*/
-}
 #login{
-	/*margin: 0 auto;*/
-	/*width: 50%;*/
+
 	position: absolute;
-	/*width: 200px;*/
-	/*height: 200px;/*
-	/*background: #eee;*/
 	top: 50%;
 	left: 50%;
 	margin: -175px 0 0 -175px;
 	padding: 20px;
-	/*border-radius: 4px;*/
 	box-sizing: border-box;
-	/*margin-top:25%;*/
 	visibility: hidden;
 	background: #ecf0f1;
 	width: 350px;
@@ -126,7 +101,6 @@ body {
 	width: 40%;
 	padding:10px;
 }
-
 .puur h5 {
 	margin: 0px;
 }
@@ -139,7 +113,6 @@ body {
 	height: 70%;
 	min-height: 600px;
 	background-color: #9900FF;
-	/*background-image: url(images/blurnight.jpg);*/
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50% 50%;
@@ -152,7 +125,6 @@ body {
 	height: 120px;
 	width: 1024px;
 	background: #333;
-
 }
 #footbar{
 	position: absolute;
@@ -160,7 +132,6 @@ body {
 	min-height: 120px;
 	min-width: 400px;
 	margin: 20px 0 0 -120px;
-
 }
 #foot-navi{
 	position: absolute;
@@ -191,8 +162,6 @@ body {
 #validation-navi{
 	position: absolute;
 	top: -5%;
-	/*left: 45%;*/
-	/*margin: 0px 0 0 -60px;*/
 	list-style: none;
 }
 #validation-navi li, #validation-navi a{
@@ -235,13 +204,6 @@ th {
 	color: white;
 }
 
-#topdatepicker {
-	/*position: relative;
-	display: inline-block;
-	width: 200px;
-	left: 50%;
-	margin-left: -70px;*/
-}
 select , input {
 	padding:3px;
 	margin-top: 10px;
@@ -268,8 +230,6 @@ input {
 .myheading {
 	position: relative;
 	top:10px;
-	/*left:50%;
-	margin-left: -80px;*/
 	font-size: 24px;
 	font-weight: bold;
 	margin: 0px;
@@ -297,8 +257,6 @@ input {
 	background-color: #4CAF50;
 	font-size: 16px;
 	border-radius: 4px;
-
-
 }
 .deletebutton{
 	border-radius: 4px;
