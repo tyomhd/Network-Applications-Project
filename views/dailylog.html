@@ -1,6 +1,6 @@
 <div id="backbg">
 <div>College project</div>
-    <form action="?page=createdailylog" method="POST">
+    <form action="?page=dailylog" method="POST">
     <select name="day">
         <?php for ($i = 1; $i <= 31; $i++) : ?>
         <option value="<?= $i ?>"><?= $i ?></option>
@@ -16,13 +16,20 @@
         <option value="<?= $i ?>"><?= $i ?></option>
         <?php endfor ?>
     </select>
-        <input type="submit">
+        <input type="submit" value="OK">
     </form>
 <?php echo "<table border='1'>
 <tr>
         <td><b>Date</b></td>
         <td><b>Food</b> </td>
         <td><b>Amount, g</b> </td>
+        <td><b>Carbs, g</b></td>
+        <td><b>Fats, g</b></td>
+        <td><b>Proteis, g</b></td>
+        <td><b>Alcohol, g</b></td>
+        <td><b>Water, g</b></td>
+        <td><b>Fiber, g</b></td>
+        <td><b>Energy, kcal</b></td>
         <td><b>Delete</b> </td>
     </tr>";
     if($result!=null){
@@ -31,12 +38,32 @@
     <td>".$row['day']."</td>
     <td>".$row['foodname']."</td>
     <td>".$row['weight']."</td>
+    <td>".$row['carbs']."</td>
+    <td>".$row['fats']."</td>
+    <td>".$row['prots']."</td>
+    <td>".$row['alcohol']."</td>
+    <td>".$row['water']."</td>
+    <td>".$row['fiber']."</td>
+    <td>".$row['energy']."</td>
     <td><form action='?page=delete' method='POST'>
         <input style='visibility: hidden; height: 0; width: 0;' name='id' value='". $row['id'] ."' size='1'/><input type='submit' value='delete'/>
     </form>
     </td>
 
 </tr>";}}
+    echo "<tr>
+    <td><b>TOTAL</b></td>
+    <td><b></b> </td>
+    <td><b>".$tamount."</b> </td>
+    <td><b>".$tcarbs."</b></td>
+    <td><b>".$tfats."</b></td>
+    <td><b>".$tprots."</b></td>
+    <td><b>".$talcohol."</b></td>
+    <td><b>".$twater."</b></td>
+    <td><b>".$tfiber."</b></td>
+    <td><b>".$tenergy."</b></td>
+    <td><b></b></td>
+</tr>";
     echo "</table>";
 ?>
     <h5>Search for food:</h5>

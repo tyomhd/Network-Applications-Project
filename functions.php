@@ -25,7 +25,7 @@ function logi(){
 					array_push($errors, "Empty password field.");
 				}
 			}else{
-				$sql = "SELECT id FROM alikhach_kylastajad WHERE username='".mysqli_real_escape_string($connection, $_POST["user"])."' AND passw=SHA1('". mysqli_real_escape_string($connection, $_POST["pass"])."')";
+				$sql = "SELECT id FROM alikhach_users WHERE username='".mysqli_real_escape_string($connection, $_POST["user"])."' AND passw=SHA1('". mysqli_real_escape_string($connection, $_POST["pass"])."')";
 				$result = mysqli_num_rows(mysqli_query($connection, $sql));
 				if($result){
 					$_SESSION["user"] = $_POST["user"];
@@ -36,7 +36,6 @@ function logi(){
 			}
 		}
 	}
-	/*include_once('views/login.html');*/
 }
 
 function logout(){
@@ -44,33 +43,52 @@ function logout(){
 	session_destroy();
 	header("Location: ?");
 }
-/*
-function deleteFromTable($id){
+
+function createdailylog()
+{
 	global $connection;
-	$delete = "DELETE FROM alikhach_users_".$_SESSION["user"]." WHERE ID=".$id;
-	$result = mysqli_query($connection, $delete);
-	include_once('views/dailylog.html');
+	if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+		if (isset($_SESSION["user"])) {
+			$date = $_POST["day"].'/'.$_POST["month"].'/'.$_POST["year"];
+			$select_dates = "SELECT * FROM alikhach_users_" . $_SESSION["user"]." WHERE day='$date'";
+			$result = mysqli_query($connection, $select_dates);
+			$tamount = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(weight) AS tamount  FROM alikhach_users_".$_SESSION["user"]." where day='$date'"))["tamount"];
+			$tcarbs = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(carbs) AS tcarbs  FROM alikhach_users_".$_SESSION["user"]." where day='$date'"))["tcarbs"];
+			$tfats = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(fats) AS tfats  FROM alikhach_users_".$_SESSION["user"]." where day='$date'"))["tfats"];
+			$tprots = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(prots) AS tprots  FROM alikhach_users_".$_SESSION["user"]." where day='$date'"))["tprots"];
+			$talcohol = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(alcohol) AS talcohol  FROM alikhach_users_".$_SESSION["user"]." where day='$date'"))["talcohol"];
+			$twater = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(water) AS twater  FROM alikhach_users_".$_SESSION["user"]." where day='$date'"))["twater"];
+			$tfiber = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(fiber) AS tfiber  FROM alikhach_users_".$_SESSION["user"]." where day='$date'"))["tfiber"];
+			$tenergy = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(energy) AS tenergy  FROM alikhach_users_".$_SESSION["user"]." where day='$date'"))["tenergy"];
+
+		} else {
+			header("Location: ?");
+		}
+		include_once('views/dailylog.html');
+	}
 }
-*/
+
 function kuva_puurid(){
 	global $connection;
-	//$puurid = array();
 
 	if(isset($_SESSION["user"])) {
-		/*$distinct_puur = "SELECT DISTINCT day FROM alikhach_users_test";
-		$result = mysqli_query($connection, $distinct_puur);
-		while ($row = $result->fetch_assoc()) {
-
-			$select_puur = "SELECT * FROM alikhach_users_test WHERE  day=" . $row['day'];
-			$result2 = mysqli_query($connection, $select_puur);
-
-			while ($row2 = $result2->fetch_assoc()) {
-				$puurid[$row['day']][] = $row2;
-			}
-		}*/
-
 		$select_dates = "SELECT * FROM alikhach_users_".$_SESSION["user"];
 		$result = mysqli_query($connection, $select_dates);
+
+		//$sum = "SELECT  SUM(carbs) AS tcarbs , SELECT SUM(fats) AS tfats , SELECT SUM(prots) AS tprots, SELECT SUM(alcohol) AS talcohol, SELECT SUM(water) AS twater, SELECT SUM(fiber) AS tfiber , SELECT SUM(energy) AS tenergy  FROM alikhach_users_".$_SESSION["user"];
+		//$sum = "SELECT SUM(carbs) AS tcarbs  FROM alikhach_users_".$_SESSION["user"];
+		//$sum = "SELECT  SUM('carbs') AS 'tcarbs' , SELECT SUM('fats') as 'tfats' FROM alikhach_users_".$_SESSION["user"];
+		//$row2 = mysqli_fetch_assoc($result2);
+		//$row2 =  mysqli_fetch_assoc($result2);
+		$tamount = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(weight) AS tamount  FROM alikhach_users_".$_SESSION["user"]))["tamount"];
+		$tcarbs = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(carbs) AS tcarbs  FROM alikhach_users_".$_SESSION["user"]))["tcarbs"];
+		$tfats = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(fats) AS tfats  FROM alikhach_users_".$_SESSION["user"]))["tfats"];
+		$tprots = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(prots) AS tprots  FROM alikhach_users_".$_SESSION["user"]))["tprots"];
+		$talcohol = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(alcohol) AS talcohol  FROM alikhach_users_".$_SESSION["user"]))["talcohol"];
+		$twater = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(water) AS twater  FROM alikhach_users_".$_SESSION["user"]))["twater"];
+		$tfiber = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(fiber) AS tfiber  FROM alikhach_users_".$_SESSION["user"]))["tfiber"];
+		$tenergy = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(energy) AS tenergy  FROM alikhach_users_".$_SESSION["user"]))["tenergy"];
+
 
 	} else {
 		header("Location: ?");
@@ -78,75 +96,7 @@ function kuva_puurid(){
 	include_once('views/dailylog.html');
 }
 
-function lisa(){
-	global $connection;
-	$errors=array();
 
-
-	if(isset($_SESSION["user"])) {
-		if($_SERVER['REQUEST_METHOD'] == 'POST'){
-			try{$fileLocation = upload('liik');
-			}catch(Exception $e){}
-
-			if(empty($_POST["nimi"]) || empty($_POST["puur"]) || empty($fileLocation)){
-				if(empty($_POST["nimi"])) {
-					array_push($errors, "Empty name field.");
-				}
-				if(empty($_POST["puur"])) {
-					array_push($errors, "Empty cage field.");
-				}
-				if(empty($fileLocation)) {
-					array_push($errors, "Picture is missing");
-				}
-			}else{
-				$n = mysqli_real_escape_string ($connection, $_POST["nimi"]);
-				$p = mysqli_real_escape_string ($connection, $_POST["puur"]);
-				$l = mysqli_real_escape_string ($connection, "images/".$_FILES["liik"]["name"]);
-				$result = mysqli_query($connection, "INSERT INTO al1213_loomaaed (nimi, puur, liik) VALUES ('$n','$p','$l')");
-				$id = mysqli_insert_id($connection);
-				if($id>0){
-					header("Location: ?page=loomad");
-				}else{
-					array_push($errors, "Picture can't be loaded");
-				}
-
-			}
-		}
-	} else {
-		header("Location: ?page=login");
-	}
-	include_once('views/input-form.html');
-
-}
-
-function upload($name){
-	$allowedExts = array("jpg", "jpeg", "gif", "png");
-	$allowedTypes = array("image/gif", "image/jpeg", "image/png","image/pjpeg");
-	$extension = end(explode(".", $_FILES[$name]["name"]));
-
-	if ( in_array($_FILES[$name]["type"], $allowedTypes)
-		&& ($_FILES[$name]["size"] < 100000)
-		&& in_array($extension, $allowedExts)) {
-		// fail õiget tüüpi ja suurusega
-		if ($_FILES[$name]["error"] > 0) {
-			$_SESSION['notices'][]= "Return Code: " . $_FILES[$name]["error"];
-			return "";
-		} else {
-			// vigu ei ole
-			if (file_exists("images/" . $_FILES[$name]["name"])) {
-				// fail olemas ära uuesti lae, tagasta failinimi
-				$_SESSION['notices'][]= $_FILES[$name]["name"] . " juba eksisteerib. ";
-				return "images/" .$_FILES[$name]["name"];
-			} else {
-				// kõik ok, aseta pilt
-				move_uploaded_file($_FILES[$name]["tmp_name"], "images/" . $_FILES[$name]["name"]);
-				return "images/" .$_FILES[$name]["name"];
-			}
-		}
-	} else {
-		return "";
-	}
-}
 function addrow(){
 	global $connection;
 	if($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -155,11 +105,17 @@ function addrow(){
 		$id =  $_POST["foodid"];
 		$name = "SELECT * FROM alikhach_nutridata WHERE ID=".$id;
 		$result = mysqli_query($connection, $name);
-		$rw =  mysqli_fetch_assoc($result);
-		$row = $rw["Name-eng"];
-		$name = substr($row,0,49);
+		$row =  mysqli_fetch_assoc($result);
+		$name = substr($row["Name-eng"],0,49);
+		$carbs= (double)$amount/100 *(double)$row["Carbs-absorbable-g"];
+		$fats= (double)$amount/100 *(double)$row["Fats-g"];
+		$prots= (double)$amount/100 *(double)$row["Proteins-g"];
+		$alcohol= (double)$amount/100 *(double)$row["Alcohol-g"];
+		$water= (double)$amount/100 *(double)$row["Water-g"];
+		$fiber= (double)$amount/100 *(double)$row["Fiber-g"];
+		$energy= (double)$amount/100 *(double)$row["Energy-kcal"];
 
-		$add = "INSERT INTO alikhach_users_".$_SESSION["user"]." (food_id, weight, day, foodname) VALUES ($id, $amount, '$date', '$name')";
+		$add = "INSERT INTO alikhach_users_".$_SESSION["user"]." (food_id, weight, day, foodname, carbs, fats, prots, alcohol, water, fiber, energy) VALUES ($id, $amount, '$date', '$name', $carbs, $fats, $prots, $alcohol, $water, $fiber, $energy)";
 		$result2 = mysqli_query($connection, $add);
 		if ($result2) {
 			header('Location: http://enos.itcollege.ee/~alikhach/Vorgurakendused1/Project/project.php?page=loomad');
@@ -178,6 +134,7 @@ function deleterow(){
 		}
 	}
 }
+
 function createGraph(){
 	global $connection;
 	include_once('views/daylygraph.html');

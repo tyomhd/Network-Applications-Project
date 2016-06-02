@@ -35,13 +35,77 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="dailylog.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dailylog.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/dailylog.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.16962306">
-              <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+            <state vertical-scroll-proportion="-26.846153">
+              <caret line="90" column="17" selection-start-line="90" selection-start-column="17" selection-end-line="90" selection-end-column="17" />
               <folding>
-                <element signature="n#style#0;n#input#0;n#form#0;n#td#3;n#tr#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#form#0;n#td#10;n#tr#1;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="functions.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/functions.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6502857">
+              <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+              <folding>
+                <marker date="1464861327033" expanded="true" signature="783:966" placeholder="SELECT id FR... alikhach_kylastajad" />
+                <marker date="1464861327033" expanded="true" signature="1516:1545" placeholder="SELECT * FRO... alikhach_users_" />
+                <marker date="1464861327033" expanded="true" signature="1516:1568" placeholder="SELECT * FRO... alikhach_users_" />
+                <marker date="1464861327033" expanded="true" signature="1516:1586" placeholder="SELECT * FRO... alikhach_users_" />
+                <marker date="1464861327033" expanded="true" signature="1516:1587" placeholder="SELECT * FRO... alikhach_users_" />
+                <marker date="1464861327033" expanded="true" signature="1704:1755" placeholder="SELECT SUM(w... alikhach_users_" />
+                <marker date="1464861327033" expanded="true" signature="1704:1775" placeholder="SELECT SUM(w... alikhach_users_" />
+                <marker date="1464861327033" expanded="true" signature="1704:1776" placeholder="SELECT SUM(w... alikhach_users_" />
+                <marker date="1464861327033" expanded="true" signature="1704:1794" placeholder="SELECT SUM(w... alikhach_users_" />
+                <marker date="1464861327033" expanded="true" signature="1704:1795" placeholder="SELECT SUM(w... alikhach_users_" />
+                <marker date="1464861327033" expanded="true" signature="1704:1798" placeholder="SELECT SUM(w... alikhach_users_" />
+                <marker date="1464861327033" expanded="true" signature="1869:1918" placeholder="SELECT SUM(c... alikhach_users_" />
+                <marker date="1464861327033" expanded="true" signature="1869:1957" placeholder="SELECT SUM(c... alikhach_users_" />
+                <marker date="1464861327033" expanded="true" signature="2030:2077" placeholder="SELECT SUM(f... alikhach_users_" />
+                <marker date="1464861327033" expanded="true" signature="2030:2116" placeholder="SELECT SUM(f... alikhach_users_" />
+                <marker date="1464861327033" expanded="true" signature="2189:2238" placeholder="SELECT SUM(p... alikhach_users_" />
+                <marker date="1464861327033" expanded="true" signature="2189:2277" placeholder="SELECT SUM(p... alikhach_users_" />
+                <marker date="1464861327033" expanded="true" signature="2353:2406" placeholder="SELECT SUM(a... alikhach_users_" />
+                <marker date="1464861327033" expanded="true" signature="2353:2445" placeholder="SELECT SUM(a... alikhach_users_" />
+                <marker date="1464861327033" expanded="true" signature="2521:2570" placeholder="SELECT SUM(w... alikhach_users_" />
+                <marker date="1464861327033" expanded="true" signature="2521:2609" placeholder="SELECT SUM(w... alikhach_users_" />
+                <marker date="1464861327033" expanded="true" signature="2683:2732" placeholder="SELECT SUM(f... alikhach_users_" />
+                <marker date="1464861327033" expanded="true" signature="2683:2771" placeholder="SELECT SUM(f... alikhach_users_" />
+                <marker date="1464861327033" expanded="true" signature="2846:2897" placeholder="SELECT SUM(e... alikhach_users_" />
+                <marker date="1464861327033" expanded="true" signature="2846:2936" placeholder="SELECT SUM(e... alikhach_users_" />
+                <marker date="1464861327033" expanded="true" signature="3136:3165" placeholder="SELECT * FRO... alikhach_users_test" />
+                <marker date="1464861327033" expanded="true" signature="3136:3184" placeholder="SELECT * FRO... alikhach_users_" />
+                <marker date="1464861327033" expanded="true" signature="3253:3260" placeholder="SELECT * FRO... alikhach_users_" />
+                <marker date="1464861327033" expanded="true" signature="3253:3478" placeholder="SELECT SUM(C... " />
+                <marker date="1464861327033" expanded="true" signature="3253:3484" placeholder="SELECT SUM(C... " />
+                <marker date="1464861327033" expanded="true" signature="3253:3486" placeholder="SELECT SUM(C... " />
+                <marker date="1464861327033" expanded="true" signature="3517:3566" placeholder="SELECT SUM(c... alikhach_users_" />
+                <marker date="1464861327033" expanded="true" signature="3599:3684" placeholder="SELECT SUM('... " />
+                <marker date="1464861327033" expanded="true" signature="3849:3900" placeholder="SELECT SUM(w... alikhach_users_" />
+                <marker date="1464861327033" expanded="true" signature="3992:4041" placeholder="SELECT SUM(c... alikhach_users_" />
+                <marker date="1464861327033" expanded="true" signature="4131:4178" placeholder="SELECT SUM(f... alikhach_users_" />
+                <marker date="1464861327033" expanded="true" signature="4268:4317" placeholder="SELECT SUM(p... alikhach_users_" />
+                <marker date="1464861327033" expanded="true" signature="4410:4463" placeholder="SELECT SUM(a... alikhach_users_" />
+                <marker date="1464861327033" expanded="true" signature="4556:4605" placeholder="SELECT SUM(w... alikhach_users_" />
+                <marker date="1464861327033" expanded="true" signature="4696:4745" placeholder="SELECT SUM(f... alikhach_users_" />
+                <marker date="1464861327033" expanded="true" signature="4837:4888" placeholder="SELECT SUM(e... alikhach_users_" />
+                <marker date="1464861327033" expanded="true" signature="5220:5253" placeholder="SELECT Name-... alikhach_nutridata" />
+                <marker date="1464861327033" expanded="true" signature="5220:5259" placeholder="SELECT Name-... alikhach_nutridata" />
+                <marker date="1464861327033" expanded="true" signature="5220:5262" placeholder="SELECT 'Name... " />
+                <marker date="1464861327033" expanded="true" signature="5220:5267" placeholder="SELECT 'Name... " />
+                <marker date="1464861327033" expanded="true" signature="5226:5253" placeholder="INSERT INTO alikhach_users_test... " />
+                <marker date="1464861327033" expanded="true" signature="5819:5846" placeholder="INSERT INTO alikhach_users_... " />
+                <marker date="1464861327033" expanded="true" signature="5819:5983" placeholder="INSERT INTO alikhach_users_test... " />
+                <marker date="1464861327033" expanded="true" signature="5819:6049" placeholder="INSERT INTO alikhach_users_test... " />
+                <marker date="1464861327033" expanded="true" signature="5819:6096" placeholder="INSERT INTO alikhach_users_test... " />
+                <marker date="1464861327033" expanded="true" signature="6357:6384" placeholder="DELETE FROM " />
+                <marker date="1464861327033" expanded="true" signature="6357:6415" placeholder="DELETE FROM " />
+                <marker date="1464861327033" expanded="true" signature="6691:6694" placeholder="DELETE FROM " />
               </folding>
             </state>
           </provider>
@@ -50,8 +114,8 @@
       <file leaf-file-name="project-style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project-style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.622642">
-              <caret line="215" column="0" selection-start-line="215" selection-start-column="0" selection-end-line="215" selection-end-column="0" />
+            <state vertical-scroll-proportion="-12.9811325">
+              <caret line="213" column="30" selection-start-line="213" selection-start-column="30" selection-end-line="213" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -60,8 +124,8 @@
       <file leaf-file-name="welcome-view.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/welcome-view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.9615384">
-              <caret line="3" column="40" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
+            <state vertical-scroll-proportion="-5.8846154">
+              <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -70,8 +134,8 @@
       <file leaf-file-name="project.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.622642">
-              <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+            <state vertical-scroll-proportion="-13.150944">
+              <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -107,39 +171,6 @@
                 <marker date="1464844167148" expanded="true" signature="332:381" placeholder="INSERT INTO alikhach_users_test... " />
                 <marker date="1464844167148" expanded="true" signature="332:391" placeholder="INSERT INTO alikhach_users_test... " />
                 <marker date="1464844167148" expanded="true" signature="338:381" placeholder="DELETE FROM " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/functions.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.943397">
-              <caret line="181" column="23" selection-start-line="181" selection-start-column="23" selection-end-line="181" selection-end-column="23" />
-              <folding>
-                <marker date="1464846604849" expanded="true" signature="783:971" placeholder="SELECT id FR... alikhach_kylastajad" />
-                <marker date="1464846604849" expanded="true" signature="1413:1440" placeholder="DELETE FROM " />
-                <marker date="1464846604849" expanded="true" signature="1413:1442" placeholder="DELETE FROM " />
-                <marker date="1464846604849" expanded="true" signature="1413:1471" placeholder="DELETE FROM " />
-                <marker date="1464846604849" expanded="true" signature="1690:1734" placeholder="SELECT DISTI... alikhach_users_test" />
-                <marker date="1464846604849" expanded="true" signature="1854:1899" placeholder="SELECT * FRO... alikhach_users_test" />
-                <marker date="1464846604849" expanded="true" signature="1854:1914" placeholder="SELECT * FRO... alikhach_users_test" />
-                <marker date="1464846604849" expanded="true" signature="2084:2113" placeholder="SELECT * FRO... alikhach_users_test" />
-                <marker date="1464846604849" expanded="true" signature="2084:2132" placeholder="SELECT * FRO... alikhach_users_" />
-                <marker date="1464846604849" expanded="true" signature="3070:3140" placeholder="INSERT INTO al1213_loomaaed... " />
-                <marker date="1464846604849" expanded="true" signature="4603:4636" placeholder="SELECT Name-... alikhach_nutridata" />
-                <marker date="1464846604849" expanded="true" signature="4603:4642" placeholder="SELECT Name-... alikhach_nutridata" />
-                <marker date="1464846604849" expanded="true" signature="4603:4645" placeholder="SELECT 'Name... " />
-                <marker date="1464846604849" expanded="true" signature="4603:4650" placeholder="SELECT 'Name... " />
-                <marker date="1464846604849" expanded="true" signature="4609:4636" placeholder="INSERT INTO alikhach_users_test... " />
-                <marker date="1464846604849" expanded="true" signature="4802:4829" placeholder="INSERT INTO alikhach_users_... " />
-                <marker date="1464846604849" expanded="true" signature="4802:4915" placeholder="INSERT INTO alikhach_users_test... " />
-                <marker date="1464846604849" expanded="true" signature="4802:4923" placeholder="INSERT INTO alikhach_users_test... " />
-                <marker date="1464846604849" expanded="true" signature="4802:4970" placeholder="INSERT INTO alikhach_users_test... " />
-                <marker date="1464846604849" expanded="true" signature="5231:5258" placeholder="DELETE FROM " />
-                <marker date="1464846604849" expanded="true" signature="5231:5289" placeholder="DELETE FROM " />
-                <marker date="1464846604849" expanded="true" signature="5564:5567" placeholder="DELETE FROM " />
               </folding>
             </state>
           </provider>
@@ -184,13 +215,13 @@
         <option value="$PROJECT_DIR$/views/about.html" />
         <option value="$PROJECT_DIR$/views/daylygraph.html" />
         <option value="$PROJECT_DIR$/views/head.html" />
-        <option value="$PROJECT_DIR$/views/welcome-view.html" />
         <option value="$PROJECT_DIR$/addrow.php" />
-        <option value="$PROJECT_DIR$/project-style.css" />
-        <option value="$PROJECT_DIR$/project.php" />
         <option value="$PROJECT_DIR$/deleterow.php" />
-        <option value="$PROJECT_DIR$/functions.php" />
+        <option value="$PROJECT_DIR$/project.php" />
+        <option value="$PROJECT_DIR$/views/welcome-view.html" />
+        <option value="$PROJECT_DIR$/project-style.css" />
         <option value="$PROJECT_DIR$/views/dailylog.html" />
+        <option value="$PROJECT_DIR$/functions.php" />
       </list>
     </option>
   </component>
@@ -321,7 +352,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2703125" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
@@ -448,30 +479,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project-style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.622642">
-          <caret line="215" column="0" selection-start-line="215" selection-start-column="0" selection-end-line="215" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/welcome-view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9615384">
-          <caret line="3" column="40" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.622642">
-          <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/deleterow.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.65384614">
@@ -485,37 +492,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.943397">
-          <caret line="181" column="23" selection-start-line="181" selection-start-column="23" selection-end-line="181" selection-end-column="23" />
-          <folding>
-            <marker date="1464846604849" expanded="true" signature="783:971" placeholder="SELECT id FR... alikhach_kylastajad" />
-            <marker date="1464846604849" expanded="true" signature="1413:1440" placeholder="DELETE FROM " />
-            <marker date="1464846604849" expanded="true" signature="1413:1442" placeholder="DELETE FROM " />
-            <marker date="1464846604849" expanded="true" signature="1413:1471" placeholder="DELETE FROM " />
-            <marker date="1464846604849" expanded="true" signature="1690:1734" placeholder="SELECT DISTI... alikhach_users_test" />
-            <marker date="1464846604849" expanded="true" signature="1854:1899" placeholder="SELECT * FRO... alikhach_users_test" />
-            <marker date="1464846604849" expanded="true" signature="1854:1914" placeholder="SELECT * FRO... alikhach_users_test" />
-            <marker date="1464846604849" expanded="true" signature="2084:2113" placeholder="SELECT * FRO... alikhach_users_test" />
-            <marker date="1464846604849" expanded="true" signature="2084:2132" placeholder="SELECT * FRO... alikhach_users_" />
-            <marker date="1464846604849" expanded="true" signature="3070:3140" placeholder="INSERT INTO al1213_loomaaed... " />
-            <marker date="1464846604849" expanded="true" signature="4603:4636" placeholder="SELECT Name-... alikhach_nutridata" />
-            <marker date="1464846604849" expanded="true" signature="4603:4642" placeholder="SELECT Name-... alikhach_nutridata" />
-            <marker date="1464846604849" expanded="true" signature="4603:4645" placeholder="SELECT 'Name... " />
-            <marker date="1464846604849" expanded="true" signature="4603:4650" placeholder="SELECT 'Name... " />
-            <marker date="1464846604849" expanded="true" signature="4609:4636" placeholder="INSERT INTO alikhach_users_test... " />
-            <marker date="1464846604849" expanded="true" signature="4802:4829" placeholder="INSERT INTO alikhach_users_... " />
-            <marker date="1464846604849" expanded="true" signature="4802:4915" placeholder="INSERT INTO alikhach_users_test... " />
-            <marker date="1464846604849" expanded="true" signature="4802:4923" placeholder="INSERT INTO alikhach_users_test... " />
-            <marker date="1464846604849" expanded="true" signature="4802:4970" placeholder="INSERT INTO alikhach_users_test... " />
-            <marker date="1464846604849" expanded="true" signature="5231:5258" placeholder="DELETE FROM " />
-            <marker date="1464846604849" expanded="true" signature="5231:5289" placeholder="DELETE FROM " />
-            <marker date="1464846604849" expanded="true" signature="5564:5567" placeholder="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/daylygraph.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.65384614">
@@ -524,12 +500,98 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/project.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.150944">
+          <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/welcome-view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.8846154">
+          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project-style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.9811325">
+          <caret line="213" column="30" selection-start-line="213" selection-start-column="30" selection-end-line="213" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/dailylog.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16962306">
-          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+        <state vertical-scroll-proportion="-26.846153">
+          <caret line="90" column="17" selection-start-line="90" selection-start-column="17" selection-end-line="90" selection-end-column="17" />
           <folding>
-            <element signature="n#style#0;n#input#0;n#form#0;n#td#3;n#tr#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#form#0;n#td#10;n#tr#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6502857">
+          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <folding>
+            <marker date="1464861327033" expanded="true" signature="783:966" placeholder="SELECT id FR... alikhach_kylastajad" />
+            <marker date="1464861327033" expanded="true" signature="1516:1545" placeholder="SELECT * FRO... alikhach_users_" />
+            <marker date="1464861327033" expanded="true" signature="1516:1568" placeholder="SELECT * FRO... alikhach_users_" />
+            <marker date="1464861327033" expanded="true" signature="1516:1586" placeholder="SELECT * FRO... alikhach_users_" />
+            <marker date="1464861327033" expanded="true" signature="1516:1587" placeholder="SELECT * FRO... alikhach_users_" />
+            <marker date="1464861327033" expanded="true" signature="1704:1755" placeholder="SELECT SUM(w... alikhach_users_" />
+            <marker date="1464861327033" expanded="true" signature="1704:1775" placeholder="SELECT SUM(w... alikhach_users_" />
+            <marker date="1464861327033" expanded="true" signature="1704:1776" placeholder="SELECT SUM(w... alikhach_users_" />
+            <marker date="1464861327033" expanded="true" signature="1704:1794" placeholder="SELECT SUM(w... alikhach_users_" />
+            <marker date="1464861327033" expanded="true" signature="1704:1795" placeholder="SELECT SUM(w... alikhach_users_" />
+            <marker date="1464861327033" expanded="true" signature="1704:1798" placeholder="SELECT SUM(w... alikhach_users_" />
+            <marker date="1464861327033" expanded="true" signature="1869:1918" placeholder="SELECT SUM(c... alikhach_users_" />
+            <marker date="1464861327033" expanded="true" signature="1869:1957" placeholder="SELECT SUM(c... alikhach_users_" />
+            <marker date="1464861327033" expanded="true" signature="2030:2077" placeholder="SELECT SUM(f... alikhach_users_" />
+            <marker date="1464861327033" expanded="true" signature="2030:2116" placeholder="SELECT SUM(f... alikhach_users_" />
+            <marker date="1464861327033" expanded="true" signature="2189:2238" placeholder="SELECT SUM(p... alikhach_users_" />
+            <marker date="1464861327033" expanded="true" signature="2189:2277" placeholder="SELECT SUM(p... alikhach_users_" />
+            <marker date="1464861327033" expanded="true" signature="2353:2406" placeholder="SELECT SUM(a... alikhach_users_" />
+            <marker date="1464861327033" expanded="true" signature="2353:2445" placeholder="SELECT SUM(a... alikhach_users_" />
+            <marker date="1464861327033" expanded="true" signature="2521:2570" placeholder="SELECT SUM(w... alikhach_users_" />
+            <marker date="1464861327033" expanded="true" signature="2521:2609" placeholder="SELECT SUM(w... alikhach_users_" />
+            <marker date="1464861327033" expanded="true" signature="2683:2732" placeholder="SELECT SUM(f... alikhach_users_" />
+            <marker date="1464861327033" expanded="true" signature="2683:2771" placeholder="SELECT SUM(f... alikhach_users_" />
+            <marker date="1464861327033" expanded="true" signature="2846:2897" placeholder="SELECT SUM(e... alikhach_users_" />
+            <marker date="1464861327033" expanded="true" signature="2846:2936" placeholder="SELECT SUM(e... alikhach_users_" />
+            <marker date="1464861327033" expanded="true" signature="3136:3165" placeholder="SELECT * FRO... alikhach_users_test" />
+            <marker date="1464861327033" expanded="true" signature="3136:3184" placeholder="SELECT * FRO... alikhach_users_" />
+            <marker date="1464861327033" expanded="true" signature="3253:3260" placeholder="SELECT * FRO... alikhach_users_" />
+            <marker date="1464861327033" expanded="true" signature="3253:3478" placeholder="SELECT SUM(C... " />
+            <marker date="1464861327033" expanded="true" signature="3253:3484" placeholder="SELECT SUM(C... " />
+            <marker date="1464861327033" expanded="true" signature="3253:3486" placeholder="SELECT SUM(C... " />
+            <marker date="1464861327033" expanded="true" signature="3517:3566" placeholder="SELECT SUM(c... alikhach_users_" />
+            <marker date="1464861327033" expanded="true" signature="3599:3684" placeholder="SELECT SUM('... " />
+            <marker date="1464861327033" expanded="true" signature="3849:3900" placeholder="SELECT SUM(w... alikhach_users_" />
+            <marker date="1464861327033" expanded="true" signature="3992:4041" placeholder="SELECT SUM(c... alikhach_users_" />
+            <marker date="1464861327033" expanded="true" signature="4131:4178" placeholder="SELECT SUM(f... alikhach_users_" />
+            <marker date="1464861327033" expanded="true" signature="4268:4317" placeholder="SELECT SUM(p... alikhach_users_" />
+            <marker date="1464861327033" expanded="true" signature="4410:4463" placeholder="SELECT SUM(a... alikhach_users_" />
+            <marker date="1464861327033" expanded="true" signature="4556:4605" placeholder="SELECT SUM(w... alikhach_users_" />
+            <marker date="1464861327033" expanded="true" signature="4696:4745" placeholder="SELECT SUM(f... alikhach_users_" />
+            <marker date="1464861327033" expanded="true" signature="4837:4888" placeholder="SELECT SUM(e... alikhach_users_" />
+            <marker date="1464861327033" expanded="true" signature="5220:5253" placeholder="SELECT Name-... alikhach_nutridata" />
+            <marker date="1464861327033" expanded="true" signature="5220:5259" placeholder="SELECT Name-... alikhach_nutridata" />
+            <marker date="1464861327033" expanded="true" signature="5220:5262" placeholder="SELECT 'Name... " />
+            <marker date="1464861327033" expanded="true" signature="5220:5267" placeholder="SELECT 'Name... " />
+            <marker date="1464861327033" expanded="true" signature="5226:5253" placeholder="INSERT INTO alikhach_users_test... " />
+            <marker date="1464861327033" expanded="true" signature="5819:5846" placeholder="INSERT INTO alikhach_users_... " />
+            <marker date="1464861327033" expanded="true" signature="5819:5983" placeholder="INSERT INTO alikhach_users_test... " />
+            <marker date="1464861327033" expanded="true" signature="5819:6049" placeholder="INSERT INTO alikhach_users_test... " />
+            <marker date="1464861327033" expanded="true" signature="5819:6096" placeholder="INSERT INTO alikhach_users_test... " />
+            <marker date="1464861327033" expanded="true" signature="6357:6384" placeholder="DELETE FROM " />
+            <marker date="1464861327033" expanded="true" signature="6357:6415" placeholder="DELETE FROM " />
+            <marker date="1464861327033" expanded="true" signature="6691:6694" placeholder="DELETE FROM " />
           </folding>
         </state>
       </provider>

@@ -38,6 +38,9 @@ switch($page){
 	case "graph":
 		createGraph();
 		break;
+	case "dailylog":
+		createdailylog();
+		break;
 	default:
 		logi();
 		include_once('views/welcome-view.html');

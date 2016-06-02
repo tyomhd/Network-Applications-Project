@@ -208,9 +208,9 @@ body {
 #backbg {
 	position: relative;
 	left: 50%;
-	margin-left: -300px;
+	margin-left: -512px;
 	min-height: 600px;
-	width: 600px;
+	width: 1024px;
 	background-color: #ecf0f1;
 }
 
