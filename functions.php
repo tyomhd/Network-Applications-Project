@@ -44,45 +44,46 @@ function logout(){
 	header("Location: ?");
 }
 
-function createdailylog()
-{
-	global $connection;
-	if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-		if (isset($_SESSION["user"])) {
-			$date = $_POST["day"].'/'.$_POST["month"].'/'.$_POST["year"];
-			$select_dates = "SELECT * FROM alikhach_users_" . $_SESSION["user"]." WHERE day='$date'";
-			$result = mysqli_query($connection, $select_dates);
-			$tamount = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(weight) AS tamount  FROM alikhach_users_".$_SESSION["user"]." where day='$date'"))["tamount"];
-			$tcarbs = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(carbs) AS tcarbs  FROM alikhach_users_".$_SESSION["user"]." where day='$date'"))["tcarbs"];
-			$tfats = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(fats) AS tfats  FROM alikhach_users_".$_SESSION["user"]." where day='$date'"))["tfats"];
-			$tprots = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(prots) AS tprots  FROM alikhach_users_".$_SESSION["user"]." where day='$date'"))["tprots"];
-			$talcohol = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(alcohol) AS talcohol  FROM alikhach_users_".$_SESSION["user"]." where day='$date'"))["talcohol"];
-			$twater = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(water) AS twater  FROM alikhach_users_".$_SESSION["user"]." where day='$date'"))["twater"];
-			$tfiber = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(fiber) AS tfiber  FROM alikhach_users_".$_SESSION["user"]." where day='$date'"))["tfiber"];
-			$tenergy = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(energy) AS tenergy  FROM alikhach_users_".$_SESSION["user"]." where day='$date'"))["tenergy"];
+function createdailylog(){
 
-		} else {
-			header("Location: ?");
+	if(isset($_SESSION["user"])) {
+		global $connection;
+		if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+			if (isset($_SESSION["user"])) {
+				$date = $_POST["day"] . '/' . $_POST["month"] . '/' . $_POST["year"];
+				$select_dates = "SELECT * FROM alikhach_users_" . $_SESSION["user"] . " WHERE day='$date'";
+				$result = mysqli_query($connection, $select_dates);
+				$tamount = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(weight) AS tamount  FROM alikhach_users_" . mysqli_real_escape_string($connection, $_SESSION["user"]) . " where day='$date'"))["tamount"];
+				$tcarbs = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(carbs) AS tcarbs  FROM alikhach_users_" . mysqli_real_escape_string($connection, $_SESSION["user"]) . " where day='$date'"))["tcarbs"];
+				$tfats = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(fats) AS tfats  FROM alikhach_users_" . mysqli_real_escape_string($connection, $_SESSION["user"]) . " where day='$date'"))["tfats"];
+				$tprots = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(prots) AS tprots  FROM alikhach_users_" . mysqli_real_escape_string($connection, $_SESSION["user"]) . " where day='$date'"))["tprots"];
+				$talcohol = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(alcohol) AS talcohol  FROM alikhach_users_" . mysqli_real_escape_string($connection, $_SESSION["user"]) . " where day='$date'"))["talcohol"];
+				$twater = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(water) AS twater  FROM alikhach_users_" . mysqli_real_escape_string($connection, $_SESSION["user"]) . " where day='$date'"))["twater"];
+				$tfiber = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(fiber) AS tfiber  FROM alikhach_users_" . mysqli_real_escape_string($connection, $_SESSION["user"]) . " where day='$date'"))["tfiber"];
+				$tenergy = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(energy) AS tenergy  FROM alikhach_users_" . mysqli_real_escape_string($connection, $_SESSION["user"]) . " where day='$date'"))["tenergy"];
+			}
 		}
-		include_once('views/dailylog.html');
-	}
+	} else {
+	header("Location: ?");
+}
+	include_once('views/dailylog.html');
 }
 
 function kuva_puurid(){
 	global $connection;
 
 	if(isset($_SESSION["user"])) {
-		$select_dates = "SELECT * FROM alikhach_users_".$_SESSION["user"];
+		$select_dates = "SELECT * FROM alikhach_users_".mysqli_real_escape_string($connection,$_SESSION["user"]);
 		$result = mysqli_query($connection, $select_dates);
 
-		$tamount = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(weight) AS tamount  FROM alikhach_users_".$_SESSION["user"]))["tamount"];
-		$tcarbs = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(carbs) AS tcarbs  FROM alikhach_users_".$_SESSION["user"]))["tcarbs"];
-		$tfats = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(fats) AS tfats  FROM alikhach_users_".$_SESSION["user"]))["tfats"];
-		$tprots = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(prots) AS tprots  FROM alikhach_users_".$_SESSION["user"]))["tprots"];
-		$talcohol = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(alcohol) AS talcohol  FROM alikhach_users_".$_SESSION["user"]))["talcohol"];
-		$twater = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(water) AS twater  FROM alikhach_users_".$_SESSION["user"]))["twater"];
-		$tfiber = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(fiber) AS tfiber  FROM alikhach_users_".$_SESSION["user"]))["tfiber"];
-		$tenergy = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(energy) AS tenergy  FROM alikhach_users_".$_SESSION["user"]))["tenergy"];
+		$tamount = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(weight) AS tamount  FROM alikhach_users_".mysqli_real_escape_string($connection,$_SESSION["user"])))["tamount"];
+		$tcarbs = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(carbs) AS tcarbs  FROM alikhach_users_".mysqli_real_escape_string($connection,$_SESSION["user"])))["tcarbs"];
+		$tfats = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(fats) AS tfats  FROM alikhach_users_".mysqli_real_escape_string($connection,$_SESSION["user"])))["tfats"];
+		$tprots = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(prots) AS tprots  FROM alikhach_users_".mysqli_real_escape_string($connection,$_SESSION["user"])))["tprots"];
+		$talcohol = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(alcohol) AS talcohol  FROM alikhach_users_".mysqli_real_escape_string($connection,$_SESSION["user"])))["talcohol"];
+		$twater = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(water) AS twater  FROM alikhach_users_".mysqli_real_escape_string($connection,$_SESSION["user"])))["twater"];
+		$tfiber = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(fiber) AS tfiber  FROM alikhach_users_".mysqli_real_escape_string($connection,$_SESSION["user"])))["tfiber"];
+		$tenergy = mysqli_fetch_assoc(mysqli_query($connection, "SELECT SUM(energy) AS tenergy  FROM alikhach_users_".mysqli_real_escape_string($connection,$_SESSION["user"])))["tenergy"];
 
 	} else {
 		header("Location: ?");
@@ -93,44 +94,48 @@ function kuva_puurid(){
 
 function addrow(){
 	global $connection;
-	if($_SERVER['REQUEST_METHOD'] == 'POST') {
-		$amount = $_POST["amount"];
-		$date = $_POST["day"].'/'.$_POST["month"].'/'.$_POST["year"];
-		$id =  $_POST["foodid"];
-		$name = "SELECT * FROM alikhach_nutridata WHERE ID=".$id;
-		$result = mysqli_query($connection, $name);
-		$row =  mysqli_fetch_assoc($result);
-		$name = substr($row["Name-eng"],0,49);
-		$carbs= (double)$amount/100 *(double)$row["Carbs-absorbable-g"];
-		$fats= (double)$amount/100 *(double)$row["Fats-g"];
-		$prots= (double)$amount/100 *(double)$row["Proteins-g"];
-		$alcohol= (double)$amount/100 *(double)$row["Alcohol-g"];
-		$water= (double)$amount/100 *(double)$row["Water-g"];
-		$fiber= (double)$amount/100 *(double)$row["Fiber-g"];
-		$energy= (double)$amount/100 *(double)$row["Energy-kcal"];
+	if(isset($_SESSION["user"])) {
+		if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+			$amount = mysqli_real_escape_string($connection, $_POST["amount"]);
+			$date = mysqli_real_escape_string($connection, $_POST["day"] . '/' . $_POST["month"] . '/' . $_POST["year"]);
+			$id = mysqli_real_escape_string($connection, $_POST["foodid"]);
+			$name = "SELECT * FROM alikhach_nutridata WHERE ID=" . $id;
+			$result = mysqli_query($connection, $name);
+			$row = mysqli_fetch_assoc($result);
+			$name = mysqli_real_escape_string($connection, substr($row["Name-eng"], 0, 49));
+			$carbs = mysqli_real_escape_string($connection, (double)$amount / 100 * (double)$row["Carbs-absorbable-g"]);
+			$fats = mysqli_real_escape_string($connection, (double)$amount / 100 * (double)$row["Fats-g"]);
+			$prots = mysqli_real_escape_string($connection, (double)$amount / 100 * (double)$row["Proteins-g"]);
+			$alcohol = mysqli_real_escape_string($connection, (double)$amount / 100 * (double)$row["Alcohol-g"]);
+			$water = mysqli_real_escape_string($connection, (double)$amount / 100 * (double)$row["Water-g"]);
+			$fiber = mysqli_real_escape_string($connection, (double)$amount / 100 * (double)$row["Fiber-g"]);
+			$energy = mysqli_real_escape_string($connection, (double)$amount / 100 * (double)$row["Energy-kcal"]);
 
-		$add = "INSERT INTO alikhach_users_".$_SESSION["user"]." (food_id, weight, day, foodname, carbs, fats, prots, alcohol, water, fiber, energy) VALUES ($id, $amount, '$date', '$name', $carbs, $fats, $prots, $alcohol, $water, $fiber, $energy)";
-		$result2 = mysqli_query($connection, $add);
-		if ($result2) {
-			header('Location: http://enos.itcollege.ee/~alikhach/Vorgurakendused1/Project/project.php?page=loomad');
+			$add = "INSERT INTO alikhach_users_" . mysqli_real_escape_string($connection, $_SESSION["user"]) . " (food_id, weight, day, foodname, carbs, fats, prots, alcohol, water, fiber, energy) VALUES ($id, $amount, '$date', '$name', $carbs, $fats, $prots, $alcohol, $water, $fiber, $energy)";
+			$result2 = mysqli_query($connection, $add);
+			if ($result2) {
+				header('Location: http://enos.itcollege.ee/~alikhach/Vorgurakendused1/Project/project.php?page=loomad');
+			}
 		}
+	}else{
+		header("Location: ?");
 	}
 }
-function deleterow(){
+function deleterow()
+{
 	global $connection;
-	if($_SERVER['REQUEST_METHOD'] == 'POST') {
-		$id =  $_POST["id"];
+	if (isset($_SESSION["user"])) {
+		if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+			$id = mysqli_real_escape_string($connection, $_POST["id"]);
 
-		$delete = "DELETE FROM alikhach_users_".$_SESSION["user"]." WHERE ID=".$id;
-		$result = mysqli_query($connection, $delete);
-		if ($result) {
-			header('Location: http://enos.itcollege.ee/~alikhach/Vorgurakendused1/Project/project.php?page=loomad');
+			$delete = "DELETE FROM alikhach_users_" . mysqli_real_escape_string($connection, $_SESSION["user"]) . " WHERE ID=" . $id;
+			$result = mysqli_query($connection, $delete);
+			if ($result) {
+				header('Location: http://enos.itcollege.ee/~alikhach/Vorgurakendused1/Project/project.php?page=loomad');
+			}
 		}
+	}else{
+		header("Location: ?");
 	}
-}
-
-function createGraph(){
-	global $connection;
-	include_once('views/daylygraph.html');
 }
 ?>

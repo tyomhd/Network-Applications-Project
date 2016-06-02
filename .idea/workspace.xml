@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70e38c14-5356-4113-87b8-46e6c6dfc5aa" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions.php" afterPath="$PROJECT_DIR$/functions.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/dailylog.html" afterPath="$PROJECT_DIR$/views/dailylog.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/head.html" afterPath="$PROJECT_DIR$/views/head.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/welcome-view.html" afterPath="$PROJECT_DIR$/views/welcome-view.html" />
     </list>
     <ignored path="Project.iws" />
@@ -35,10 +37,56 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dailylog.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/functions.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.54717">
+              <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+              <folding>
+                <marker date="1464878154937" expanded="true" signature="783:966" placeholder="SELECT id FR... alikhach_users" />
+                <marker date="1464878154937" expanded="true" signature="1561:1633" placeholder="SELECT * FRO... alikhach_users_" />
+                <marker date="1464878154937" expanded="true" signature="1753:1804" placeholder="SELECT SUM(w... mysqli_real_escape_string" />
+                <marker date="1464878154937" expanded="true" signature="1753:1887" placeholder="SELECT SUM(w... alikhach_users_" />
+                <marker date="1464878154937" expanded="true" signature="1963:2095" placeholder="SELECT SUM(c... alikhach_users_" />
+                <marker date="1464878154937" expanded="true" signature="2169:2299" placeholder="SELECT SUM(f... alikhach_users_" />
+                <marker date="1464878154937" expanded="true" signature="2373:2505" placeholder="SELECT SUM(p... alikhach_users_" />
+                <marker date="1464878154937" expanded="true" signature="2582:2718" placeholder="SELECT SUM(a... alikhach_users_" />
+                <marker date="1464878154937" expanded="true" signature="2795:2927" placeholder="SELECT SUM(w... alikhach_users_" />
+                <marker date="1464878154937" expanded="true" signature="3002:3134" placeholder="SELECT SUM(f... alikhach_users_" />
+                <marker date="1464878154937" expanded="true" signature="3210:3344" placeholder="SELECT SUM(e... alikhach_users_" />
+                <marker date="1464878154937" expanded="true" signature="3543:3572" placeholder="SELECT * FRO... alikhach_users_" />
+                <marker date="1464878154937" expanded="true" signature="3746:3797" placeholder="SELECT SUM(w... alikhach_users_" />
+                <marker date="1464878154937" expanded="true" signature="3928:3977" placeholder="SELECT SUM(c... alikhach_users_" />
+                <marker date="1464878154937" expanded="true" signature="4106:4153" placeholder="SELECT SUM(f... alikhach_users_" />
+                <marker date="1464878154937" expanded="true" signature="4282:4331" placeholder="SELECT SUM(p... alikhach_users_" />
+                <marker date="1464878154937" expanded="true" signature="4463:4516" placeholder="SELECT SUM(a... alikhach_users_" />
+                <marker date="1464878154937" expanded="true" signature="4648:4697" placeholder="SELECT SUM(w... alikhach_users_" />
+                <marker date="1464878154937" expanded="true" signature="4827:4876" placeholder="SELECT SUM(f... alikhach_users_" />
+                <marker date="1464878154937" expanded="true" signature="5007:5058" placeholder="SELECT SUM(e... alikhach_users_" />
+                <marker date="1464878154937" expanded="true" signature="5593:5635" placeholder="SELECT * FRO... alikhach_nutridata" />
+                <marker date="1464878154937" expanded="true" signature="6554:6828" placeholder="INSERT INTO alikhach_users_${mysqli_real_escape_string($connection,$_SESSION[&quot;user&quot;])}... " />
+                <marker date="1464878154937" expanded="true" signature="6643:6828" placeholder="INSERT INTO alikhach_users_${$_SESSION[&quot;user&quot;]}... " />
+                <marker date="1464878154937" expanded="true" signature="7254:7281" placeholder="DELETE FROM " />
+                <marker date="1464878154937" expanded="true" signature="7254:7356" placeholder="DELETE FROM " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="head.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/head.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.41463414">
+              <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dailylog.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/dailylog.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5465632">
+            <state vertical-scroll-proportion="-18.961538">
               <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
               <folding>
                 <element signature="n#style#0;n#input#0;n#form#0;n#td#10;n#tr#1;n#div#0;n#!!top" expanded="true" />
@@ -76,13 +124,13 @@
         <option value="$PROJECT_DIR$/views/daylygraph.html" />
         <option value="$PROJECT_DIR$/addrow.php" />
         <option value="$PROJECT_DIR$/deleterow.php" />
-        <option value="$PROJECT_DIR$/views/head.html" />
         <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/functions.php" />
         <option value="$PROJECT_DIR$/project.php" />
         <option value="$PROJECT_DIR$/project-style.css" />
         <option value="$PROJECT_DIR$/views/welcome-view.html" />
         <option value="$PROJECT_DIR$/views/dailylog.html" />
+        <option value="$PROJECT_DIR$/functions.php" />
+        <option value="$PROJECT_DIR$/views/head.html" />
       </list>
     </option>
   </component>
@@ -221,7 +269,7 @@
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30416667" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28125" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -271,13 +319,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/head.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44685715">
-          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/about.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.20731707">
@@ -296,13 +337,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="43" column="3" selection-start-line="43" selection-start-column="3" selection-end-line="43" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.018847007">
-          <caret line="85" column="8" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -342,14 +376,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project-style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-29.961538">
-          <caret line="241" column="23" selection-start-line="241" selection-start-column="23" selection-end-line="241" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/welcome-view.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2827051">
@@ -360,11 +386,61 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/dailylog.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5465632">
+        <state vertical-scroll-proportion="-18.961538">
           <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
           <folding>
             <element signature="n#style#0;n#input#0;n#form#0;n#td#10;n#tr#1;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project-style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-29.961538">
+          <caret line="241" column="23" selection-start-line="241" selection-start-column="23" selection-end-line="241" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.54717">
+          <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+          <folding>
+            <marker date="1464878154937" expanded="true" signature="783:966" placeholder="SELECT id FR... alikhach_users" />
+            <marker date="1464878154937" expanded="true" signature="1561:1633" placeholder="SELECT * FRO... alikhach_users_" />
+            <marker date="1464878154937" expanded="true" signature="1753:1804" placeholder="SELECT SUM(w... mysqli_real_escape_string" />
+            <marker date="1464878154937" expanded="true" signature="1753:1887" placeholder="SELECT SUM(w... alikhach_users_" />
+            <marker date="1464878154937" expanded="true" signature="1963:2095" placeholder="SELECT SUM(c... alikhach_users_" />
+            <marker date="1464878154937" expanded="true" signature="2169:2299" placeholder="SELECT SUM(f... alikhach_users_" />
+            <marker date="1464878154937" expanded="true" signature="2373:2505" placeholder="SELECT SUM(p... alikhach_users_" />
+            <marker date="1464878154937" expanded="true" signature="2582:2718" placeholder="SELECT SUM(a... alikhach_users_" />
+            <marker date="1464878154937" expanded="true" signature="2795:2927" placeholder="SELECT SUM(w... alikhach_users_" />
+            <marker date="1464878154937" expanded="true" signature="3002:3134" placeholder="SELECT SUM(f... alikhach_users_" />
+            <marker date="1464878154937" expanded="true" signature="3210:3344" placeholder="SELECT SUM(e... alikhach_users_" />
+            <marker date="1464878154937" expanded="true" signature="3543:3572" placeholder="SELECT * FRO... alikhach_users_" />
+            <marker date="1464878154937" expanded="true" signature="3746:3797" placeholder="SELECT SUM(w... alikhach_users_" />
+            <marker date="1464878154937" expanded="true" signature="3928:3977" placeholder="SELECT SUM(c... alikhach_users_" />
+            <marker date="1464878154937" expanded="true" signature="4106:4153" placeholder="SELECT SUM(f... alikhach_users_" />
+            <marker date="1464878154937" expanded="true" signature="4282:4331" placeholder="SELECT SUM(p... alikhach_users_" />
+            <marker date="1464878154937" expanded="true" signature="4463:4516" placeholder="SELECT SUM(a... alikhach_users_" />
+            <marker date="1464878154937" expanded="true" signature="4648:4697" placeholder="SELECT SUM(w... alikhach_users_" />
+            <marker date="1464878154937" expanded="true" signature="4827:4876" placeholder="SELECT SUM(f... alikhach_users_" />
+            <marker date="1464878154937" expanded="true" signature="5007:5058" placeholder="SELECT SUM(e... alikhach_users_" />
+            <marker date="1464878154937" expanded="true" signature="5593:5635" placeholder="SELECT * FRO... alikhach_nutridata" />
+            <marker date="1464878154937" expanded="true" signature="6554:6828" placeholder="INSERT INTO alikhach_users_${mysqli_real_escape_string($connection,$_SESSION[&quot;user&quot;])}... " />
+            <marker date="1464878154937" expanded="true" signature="6643:6828" placeholder="INSERT INTO alikhach_users_${$_SESSION[&quot;user&quot;]}... " />
+            <marker date="1464878154937" expanded="true" signature="7254:7281" placeholder="DELETE FROM " />
+            <marker date="1464878154937" expanded="true" signature="7254:7356" placeholder="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/head.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41463414">
+          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
