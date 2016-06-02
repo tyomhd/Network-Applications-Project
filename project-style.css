@@ -38,20 +38,24 @@ body {
 	text-align: center;
 }
 #wrap{
-	width: 100%;
-	/*background: white;*/
-	/*margin: auto;*/
+	width: 1024px;
+	background: white;
+	margin: auto;
 	overflow: auto;
-	min-height:100%;
+	/*min-height:100%;
+	position: static;
+	left: 50%;
+	margin-left: -512px;*/
 	/*position: relative;*/
 }
 #menu {
-	display: block;
-	position: static;
+	/*position: relative;*/
+	left: 50%;
+	/*margin-left: -512px;*/
 	height: 44px;
+	/*width: 1024px;*/
 	list-style: none;
 	background: #333;
-	margin: 0px;
 	text-align: left;
 }
 #menu li, #menu a {
@@ -142,11 +146,13 @@ body {
 }
 #footer{
 	position: relative;
+	left: 50%;
+	margin-left: -512px;
 	bottom: 0;
 	height: 120px;
-	width: 100%;
+	width: 1024px;
 	background: #333;
-	margin: 0px;
+
 }
 #footbar{
 	position: absolute;
@@ -266,6 +272,7 @@ input {
 	margin-left: -80px;*/
 	font-size: 24px;
 	font-weight: bold;
+	margin: 0px;
 }
 
 #mybutton {
