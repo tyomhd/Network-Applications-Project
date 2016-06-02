@@ -29,8 +29,11 @@ switch($page){
 	case "lisa":
 		lisa();
 		break;
-	case "add";
+	case "add":
 		addrow();
+		break;
+	case "graph":
+		createGraph();
 		break;
 	default:
 		logi();

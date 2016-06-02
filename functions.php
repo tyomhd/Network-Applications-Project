@@ -166,4 +166,7 @@ function addrow(){
 		}
 	}
 }
+function createGraph(){
+	include_once('views/daylygraph.html');
+}
 ?>
