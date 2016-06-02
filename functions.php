@@ -159,14 +159,27 @@ function addrow(){
 		$row = $rw["Name-eng"];
 		$name = substr($row,0,49);
 
-		$add = "INSERT INTO alikhach_users_test (food_id, weight, day, foodname) VALUES ($id, $amount, '$date', '$name')";
+		$add = "INSERT INTO alikhach_users_".$_SESSION["user"]." (food_id, weight, day, foodname) VALUES ($id, $amount, '$date', '$name')";
 		$result2 = mysqli_query($connection, $add);
 		if ($result2) {
 			header('Location: http://enos.itcollege.ee/~alikhach/Vorgurakendused1/Project/project.php?page=loomad');
 		}
 	}
 }
+function deleterow(){
+	global $connection;
+	if($_SERVER['REQUEST_METHOD'] == 'POST') {
+		$id =  $_POST["id"];
+
+		$delete = "DELETE FROM alikhach_users_".$_SESSION["user"]." WHERE ID=".$id;
+		$result = mysqli_query($connection, $delete);
+		if ($result) {
+			header('Location: http://enos.itcollege.ee/~alikhach/Vorgurakendused1/Project/project.php?page=loomad');
+		}
+	}
+}
 function createGraph(){
+	global $connection;
 	include_once('views/daylygraph.html');
 }
 ?>

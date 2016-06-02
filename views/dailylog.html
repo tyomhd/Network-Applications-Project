@@ -1,21 +1,42 @@
 <div id="backbg">
 <div>College project</div>
-    <?php
-echo "<table border='1'>
-    <tr>
+    <form action="?page=createdailylog" method="POST">
+    <select name="day">
+        <?php for ($i = 1; $i <= 31; $i++) : ?>
+        <option value="<?= $i ?>"><?= $i ?></option>
+        <?php endfor ?>
+    </select>
+    <select name="month">
+        <?php for ($i = 1; $i <= 12; $i++) : ?>
+        <option value="<?= $i ?>"><?= $i ?></option>
+        <?php endfor ?>
+    </select>
+    <select name="year">
+        <?php for ($i = 2015; $i <= date('Y'); $i++) : ?>
+        <option value="<?= $i ?>"><?= $i ?></option>
+        <?php endfor ?>
+    </select>
+        <input type="submit">
+    </form>
+<?php echo "<table border='1'>
+<tr>
         <td><b>Date</b></td>
         <td><b>Food</b> </td>
         <td><b>Amount, g</b> </td>
         <td><b>Delete</b> </td>
     </tr>";
+    if($result!=null){
     while($row = $result->fetch_assoc()) {
     echo "<tr>
     <td>".$row['day']."</td>
     <td>".$row['foodname']."</td>
     <td>".$row['weight']."</td>
-    <td><a href='http://enos.itcollege.ee/~alikhach/Vorgurakendused1/Project/deleterow.php?id=" . $row['id'] . "'>del</a></td>
+    <td><form action='?page=delete' method='POST'>
+        <input style='visibility: hidden; height: 0; width: 0;' name='id' value='". $row['id'] ."' size='1'/><input type='submit' value='delete'/>
+    </form>
+    </td>
 
-</tr>";}
+</tr>";}}
     echo "</table>";
 ?>
     <h5>Search for food:</h5>

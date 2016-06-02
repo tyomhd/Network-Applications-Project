@@ -32,6 +32,9 @@ switch($page){
 	case "add":
 		addrow();
 		break;
+	case "delete":
+		deleterow();
+		break;
 	case "graph":
 		createGraph();
 		break;

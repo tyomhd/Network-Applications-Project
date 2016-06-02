@@ -1,5 +1,6 @@
-<?php
+<?php/*
 global $connection;
+
 $host="localhost";
 $user="test";
 $pass="t3st3r123";
@@ -12,5 +13,5 @@ $result = mysqli_query($connection, $delete);
 if ($result) {
     //header('Location: http://enos.itcollege.ee/~alikhach/Vorgurakendused1/Project/project.php?page=loomad');
 }
-
+*/
 ?>
