@@ -1,0 +1,99 @@
+<div id="backbg">
+    <form action="?page=dailylog" method="POST" id="topdatepicker">
+        <p class="myheading">Pick a date</p>
+    <select name="day">
+        <?php for ($i = 1; $i <= 31; $i++) : ?>
+        <option value="<?= $i ?>"><?= $i ?></option>
+        <?php endfor ?>
+    </select>
+    <select name="month">
+        <?php for ($i = 1; $i <= 12; $i++) : ?>
+        <option value="<?= $i ?>"><?= $i ?></option>
+        <?php endfor ?>
+    </select>
+    <select name="year">
+        <?php for ($i = 2015; $i <= date('Y'); $i++) : ?>
+        <option value="<?= $i ?>"><?= $i ?></option>
+        <?php endfor ?>
+    </select>
+        <input type="submit" value="OK" id="mybutton"/>
+    </form>
+<?php echo "<table>
+<tr>
+        <th><b>Date</b></th>
+        <th><b>Food</b> </th>
+        <th><b>Amount, g</b> </th>
+        <th><b>Carbs, g</b></th>
+        <th><b>Fats, g</b></th>
+        <th><b>Proteis, g</b></th>
+        <th><b>Alcohol, g</b></th>
+        <th><b>Water, g</b></th>
+        <th><b>Fiber, g</b></th>
+        <th><b>Energy, kcal</b></th>
+        <th><b>Delete</b> </th>
+    </tr>";
+    if($result!=null){
+    while($row = $result->fetch_assoc()) {
+    echo "<tr>
+    <td>".$row['day']."</td>
+    <td>".$row['foodname']."</td>
+    <td>".$row['weight']."</td>
+    <td>".$row['carbs']."</td>
+    <td>".$row['fats']."</td>
+    <td>".$row['prots']."</td>
+    <td>".$row['alcohol']."</td>
+    <td>".$row['water']."</td>
+    <td>".$row['fiber']."</td>
+    <td>".$row['energy']."</td>
+    <td><form action='?page=delete' method='POST'>
+        <input style='visibility: hidden; height: 0; width: 0;' name='id' value='". $row['id'] ."' size='1'/><input type='submit' value='x' class='deletebutton'/>
+    </form>
+    </td>
+
+</tr>";}}
+    echo "<tr>
+    <td><b>TOTAL</b></td>
+    <td><b></b> </td>
+    <td><b>".$tamount."</b> </td>
+    <td><b>".$tcarbs."</b></td>
+    <td><b>".$tfats."</b></td>
+    <td><b>".$tprots."</b></td>
+    <td><b>".$talcohol."</b></td>
+    <td><b>".$twater."</b></td>
+    <td><b>".$tfiber."</b></td>
+    <td><b>".$tenergy."</b></td>
+    <td><b></b></td>
+</tr>";
+    echo "</table>";
+?>
+    <p class="myheading">Add new</p>
+    <div id="searchfood">
+        <form action="?page=add" method="POST">
+        <label>Date (yyyy-mm-dd) :</br></label>
+        <!--<input type="text" name="datepicker" value="01.06.2016"/>-->
+        <!--<input id="input_date" size="12" placeholder="dd/mm/yyyy" name="nutdate" type="text"/>-->
+        <select name="day">
+            <?php for ($i = 1; $i <= 31; $i++) : ?>
+            <option value="<?= $i ?>"><?= $i ?></option>
+            <?php endfor ?>
+        </select>
+        <select name="month">
+            <?php for ($i = 1; $i <= 12; $i++) : ?>
+            <option value="<?= $i ?>"><?= $i ?></option>
+            <?php endfor ?>
+        </select>
+        <select name="year">
+            <?php for ($i = 2015; $i <= date('Y'); $i++) : ?>
+            <option value="<?= $i ?>"><?= $i ?></option>
+            <?php endfor ?>
+        </select></br>
+    <label>Search for food:</br></label>
+    <input type="text" size="30" onkeyup="showResult(this.value)" class="livesearch"/></br>
+        <label>Choose from result:</br></label>
+        <select name="foodid" id="livesearch"></select></br>
+        <label>Amount (g) :</br></label>
+        <input type="number" name="amount" class="livesearch"/></br>
+        <input type="submit" onsubmit="checkForm(this)" id="addbutton" value="+">
+    </form>
+        </div>
+</div>
