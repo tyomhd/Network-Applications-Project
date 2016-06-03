@@ -25,7 +25,7 @@
         <th><b>Amount, g</b> </th>
         <th><b>Carbs, g</b></th>
         <th><b>Fats, g</b></th>
-        <th><b>Proteis, g</b></th>
+        <th><b>Proteins, g</b></th>
         <th><b>Alcohol, g</b></th>
         <th><b>Water, g</b></th>
         <th><b>Fiber, g</b></th>
@@ -37,14 +37,14 @@
     echo "<tr>
     <td>".$row['day']."</td>
     <td>".$row['foodname']."</td>
-    <td>".$row['weight']."</td>
-    <td>".$row['carbs']."</td>
-    <td>".$row['fats']."</td>
-    <td>".$row['prots']."</td>
-    <td>".$row['alcohol']."</td>
-    <td>".$row['water']."</td>
-    <td>".$row['fiber']."</td>
-    <td>".$row['energy']."</td>
+    <td>".round($row['weight'],2)."</td>
+    <td>".round($row['carbs'],2)."</td>
+    <td>".round($row['fats'],2)."</td>
+    <td>".round($row['prots'],2)."</td>
+    <td>".round($row['alcohol'],2)."</td>
+    <td>".round($row['water'],2)."</td>
+    <td>".round($row['fiber'],2)."</td>
+    <td>".round($row['energy'],2)."</td>
     <td><form action='?page=delete' method='POST'>
         <input style='visibility: hidden; height: 0; width: 0;' name='id' value='". $row['id'] ."' size='1'/><input type='submit' value='x' class='deletebutton'/>
     </form>
@@ -54,24 +54,22 @@
     echo "<tr>
     <td><b>TOTAL</b></td>
     <td><b></b> </td>
-    <td><b>".$tamount."</b> </td>
-    <td><b>".$tcarbs."</b></td>
-    <td><b>".$tfats."</b></td>
-    <td><b>".$tprots."</b></td>
-    <td><b>".$talcohol."</b></td>
-    <td><b>".$twater."</b></td>
-    <td><b>".$tfiber."</b></td>
-    <td><b>".$tenergy."</b></td>
+    <td><b>".round($tamount,2)."</b> </td>
+    <td><b>".round($tcarbs,2)."</b></td>
+    <td><b>".round($tfats,2)."</b></td>
+    <td><b>".round($tprots,2)."</b></td>
+    <td><b>".round($talcohol,2)."</b></td>
+    <td><b>".round($twater,2)."</b></td>
+    <td><b>".round($tfiber,2)."</b></td>
+    <td><b>".round($tenergy,2)."</b></td>
     <td><b></b></td>
 </tr>";
     echo "</table>";
 ?>
-    <p class="myheading">Add new</p>
+    <p class="myheading">Add new</p></br>
     <div id="searchfood">
         <form action="?page=add" method="POST">
-        <label>Date (yyyy-mm-dd) :</br></label>
-        <!--<input type="text" name="datepicker" value="01.06.2016"/>-->
-        <!--<input id="input_date" size="12" placeholder="dd/mm/yyyy" name="nutdate" type="text"/>-->
+        <label>Date :</br></label>
         <select name="day">
             <?php for ($i = 1; $i <= 31; $i++) : ?>
             <option value="<?= $i ?>"><?= $i ?></option>
@@ -92,7 +90,7 @@
         <label>Choose from result:</br></label>
         <select name="foodid" id="livesearch" ><?php if (isset($_POST['foodid'])) echo htmlspecialchars($_POST['foodid']); ?></select></br>
         <label>Amount (g) :</br></label>
-        <input type="number" name="amount" class="livesearch" value="<?php if (isset($_POST['amount'])) echo htmlspecialchars($_POST['amount']); ?>"/></br>
+        <input type="number" name="amount" class="livesearch" min="0.01" step="0.01" value="<?php if (isset($_POST['amount'])) echo htmlspecialchars($_POST['amount']); ?>"/></br>
         <input type="submit" onsubmit="checkForm(this)" id="addbutton" value="+">
     </form>
         </div>

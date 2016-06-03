@@ -104,9 +104,12 @@ function addrow(){
 	$errors = array();
 	if(isset($_SESSION["user"])) {
 		if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-			if(empty($_POST["day"]) || empty($_POST["month"]) || empty($_POST["year"]) || empty($_POST["amount"]) || empty($_POST["foodid"]) ){
+			if(empty($_POST["day"]) || empty($_POST["month"]) || empty($_POST["year"]) || empty($_POST["amount"]) || empty($_POST["foodid"]) ) {
 				array_push($errors, "Some empty fields");
 				header("Location: ?");
+			}
+			else if($_POST["amount"]<=0){
+					array_push($errors, "Amount can't be less or equal to zero");
 			}else {
 			$amount = mysqli_real_escape_string($connection, $_POST["amount"]);
 			$date = mysqli_real_escape_string($connection, $_POST["day"] . '/' . $_POST["month"] . '/' . $_POST["year"]);
