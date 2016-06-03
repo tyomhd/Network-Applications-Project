@@ -67,6 +67,11 @@
     echo "</table>";
 ?>
     <p class="myheading">Add new</p></br>
+    <?php if (isset($errors)):?>
+    <?php foreach($errors as $error):?>
+    <div style="color:red;"><?php echo htmlspecialchars($error); ?></div>
+    <?php endforeach;?>
+    <?php endif;?>
     <div id="searchfood">
         <form action="?page=add" method="POST">
         <label>Date :</br></label>
@@ -88,9 +93,9 @@
     <label>Search for food:</br></label>
     <input type="text" size="30" onkeyup="showResult(this.value)" class="livesearch"/></br>
         <label>Choose from result:</br></label>
-        <select name="foodid" id="livesearch" ><?php if (isset($_POST['foodid'])) echo htmlspecialchars($_POST['foodid']); ?></select></br>
+        <select name="foodid" id="livesearch" required="required"><?php if (isset($_POST['foodid'])) echo htmlspecialchars($_POST['foodid']); ?></select></br>
         <label>Amount (g) :</br></label>
-        <input type="number" name="amount" class="livesearch" min="0.01" step="0.01" value="<?php if (isset($_POST['amount'])) echo htmlspecialchars($_POST['amount']); ?>"/></br>
+        <input type="number" name="amount" class="livesearch" min="0.01" step="0.01" required="required" value="<?php if (isset($_POST['amount'])) echo htmlspecialchars($_POST['amount']); ?>"/></br>
         <input type="submit" onsubmit="checkForm(this)" id="addbutton" value="+">
     </form>
         </div>
