@@ -20,14 +20,11 @@ switch($page){
 	case "about":
 		include_once('views/about.html');
 		break;
-	case "loomad":
-		kuva_puurid();
+	case "main":
+		createtable();
 		break;
 	case "logout":
 		logout();
-		break;
-	case "lisa":
-		lisa();
 		break;
 	case "add":
 		addrow();

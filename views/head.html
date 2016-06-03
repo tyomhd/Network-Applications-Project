@@ -11,13 +11,15 @@
 </head>
 <body>
 <div id="wrap">
+	<div id="menudiv">
 	<ul id="menu">
 		<!--<li><a href="?">Pealeht</a></li> /-->
 		<?php if(isset($_SESSION['user'])): ?>
-			<li><a href="?page=loomad">Daily Log</a></li>
+			<li><a href="?page=main">Daily Log</a></li>
 			<li><a href="?page=logout">Log out</a></li>
 		<?php else: ?>
 			<li id="menulogin">Log in</li>
 		<?php endif; ?>
 	</ul>
+		</div>
 	<div id="content">

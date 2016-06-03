@@ -14,7 +14,7 @@ function logi(){
 	global $connection;
 	$errors = array();
 	if(isset($_SESSION["user"])){
-		header("Location: ?page=loomad");
+		header("Location: ?page=main");
 	}else{
 		if($_SERVER['REQUEST_METHOD'] == 'POST'){
 			if(empty($_POST["user"]) || empty($_POST["pass"])){
@@ -29,7 +29,7 @@ function logi(){
 				$result = mysqli_num_rows(mysqli_query($connection, $sql));
 				if($result){
 					$_SESSION["user"] = $_POST["user"];
-					header("Location: ?page=loomad");
+					header("Location: ?page=main");
 				}else{
 					array_push($errors, "Wrong username / password");
 				}
@@ -75,7 +75,7 @@ function createdailylog(){
 	include_once('views/dailylog.html');
 }
 
-function kuva_puurid(){
+function createtable(){
 	global $connection;
 
 	if(isset($_SESSION["user"])) {
@@ -129,7 +129,7 @@ function addrow(){
 			$add = "INSERT INTO alikhach_users_" . mysqli_real_escape_string($connection, $_SESSION["user"]) . " (food_id, weight, day, foodname, carbs, fats, prots, alcohol, water, fiber, energy) VALUES ($id, $amount, '$date', '$name', $carbs, $fats, $prots, $alcohol, $water, $fiber, $energy)";
 			$result2 = mysqli_query($connection, $add);
 			if ($result2) {
-				header('Location: http://enos.itcollege.ee/~alikhach/Vorgurakendused1/Project/project.php?page=loomad');
+				header('Location: http://enos.itcollege.ee/~alikhach/Vorgurakendused1/Project/project.php?page=main');
 			}
 		}
 		}
@@ -152,7 +152,7 @@ function deleterow()
 			$delete = "DELETE FROM alikhach_users_" . mysqli_real_escape_string($connection, $_SESSION["user"]) . " WHERE ID=" . $id;
 			$result = mysqli_query($connection, $delete);
 			if ($result) {
-				header('Location: http://enos.itcollege.ee/~alikhach/Vorgurakendused1/Project/project.php?page=loomad');
+				header('Location: http://enos.itcollege.ee/~alikhach/Vorgurakendused1/Project/project.php?page=main');
 			}
 			}
 		}
