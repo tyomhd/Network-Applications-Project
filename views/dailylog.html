@@ -91,7 +91,7 @@
             <?php endfor ?><?php if (isset($_POST['year'])) echo htmlspecialchars($_POST['year']); ?>
         </select><br>
     <label>Search for food:<br></label>
-    <input type="text" size="30" onkeyup="showResult(this.value)" class="livesearch"/><br>
+    <input type="text" name="search" size="30" onkeyup="showResult(this.value)" class="livesearch" value="<?php if (isset($_GET['search'])) echo htmlspecialchars($_GET['search']); ?>"/><br>
         <label>Choose from result:<br></label>
         <select name="foodid" id="livesearch" required="required"><?php if (isset($_POST['foodid'])) echo htmlspecialchars($_POST['foodid']); ?></select><br>
         <label>Amount (g) :<br></label>
