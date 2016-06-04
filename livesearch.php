@@ -7,7 +7,7 @@ $xmlDoc->load("links.xml");
 $x=$xmlDoc->getElementsByTagName('record');
 
 //get the q parameter from URL
-$q=$_GET["q"];
+$q=htmlspecialchars($_GET["q"]);
 
 //lookup all links from the xml file if length of q>0
 if (strlen($q)>0) {
