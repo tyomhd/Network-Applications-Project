@@ -28,10 +28,11 @@ body {
 	font-family: 'SourceSansProRegular';
 	font-size: 18px;
 	text-align: center;
+	background-image: url("images/bg.png");
 }
 #wrap{
 	width: 1024px;
-	background: white;
+	background-image: url("images/bg.png");
 	margin: auto;
 	overflow: auto;
 }

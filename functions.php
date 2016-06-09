@@ -113,6 +113,12 @@ function addrow(){
 			}else {
 			$amount = mysqli_real_escape_string($connection, $_POST["amount"]);
 			$date = mysqli_real_escape_string($connection, $_POST["day"] . '/' . $_POST["month"] . '/' . $_POST["year"]);
+			$check = true;
+			list($dd,$mm,$yyyy) = explode('/',$date);
+				if (!checkdate($mm,$dd,$yyyy)) {
+        				$check = false;
+					array_push($errors, "Something wrong with your date");
+				}
 			$id = mysqli_real_escape_string($connection, $_POST["foodid"]);
 			$name = "SELECT * FROM alikhach_nutridata WHERE ID=" . $id;
 			$result = mysqli_query($connection, $name);
@@ -125,12 +131,17 @@ function addrow(){
 			$water = mysqli_real_escape_string($connection, (double)$amount / 100 * (double)$row["Water-g"]);
 			$fiber = mysqli_real_escape_string($connection, (double)$amount / 100 * (double)$row["Fiber-g"]);
 			$energy = mysqli_real_escape_string($connection, (double)$amount / 100 * (double)$row["Energy-kcal"]);
-
+			
+			if($check){
 			$add = "INSERT INTO alikhach_users_" . mysqli_real_escape_string($connection, $_SESSION["user"]) . " (food_id, weight, day, foodname, carbs, fats, prots, alcohol, water, fiber, energy) VALUES ($id, $amount, '$date', '$name', $carbs, $fats, $prots, $alcohol, $water, $fiber, $energy)";
 			$result2 = mysqli_query($connection, $add);
 			if ($result2) {
 				header('Location: http://enos.itcollege.ee/~alikhach/Vorgurakendused1/Project/project.php?page=main');
 			}
+			}else{
+				header("Location: ?");
+			}
+			
 		}
 		}
 	}else{

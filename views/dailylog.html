@@ -35,16 +35,16 @@
     if($result!=null){
     while($row = $result->fetch_assoc()) {
     echo "<tr>
-    <td>".$row['day']."</td>
-    <td>".$row['foodname']."</td>
-    <td>".round($row['weight'],2)."</td>
-    <td>".round($row['carbs'],2)."</td>
-    <td>".round($row['fats'],2)."</td>
-    <td>".round($row['prots'],2)."</td>
-    <td>".round($row['alcohol'],2)."</td>
-    <td>".round($row['water'],2)."</td>
-    <td>".round($row['fiber'],2)."</td>
-    <td>".round($row['energy'],2)."</td>
+    <td>".htmlspecialchars($row['day'])."</td>
+    <td>".htmlspecialchars($row['foodname'])."</td>
+    <td>".htmlspecialchars(round($row['weight'],2))."</td>
+    <td>".htmlspecialchars(round($row['carbs'],2))."</td>
+    <td>".htmlspecialchars(round($row['fats'],2))."</td>
+    <td>".htmlspecialchars(round($row['prots'],2))."</td>
+    <td>".htmlspecialchars(round($row['alcohol'],2))."</td>
+    <td>".htmlspecialchars(round($row['water'],2))."</td>
+    <td>".htmlspecialchars(round($row['fiber'],2))."</td>
+    <td>".htmlspecialchars(round($row['energy'],2))."</td>
     <td><form action='?page=delete' method='POST'>
         <input style='visibility: hidden; height: 0; width: 0;' name='id' value='". $row['id'] ."' size='1'/><input type='submit' value='x' class='deletebutton'/>
     </form>
@@ -54,14 +54,14 @@
     echo "<tr>
     <td><b>TOTAL</b></td>
     <td><b></b> </td>
-    <td><b>".round($tamount,2)."</b> </td>
-    <td><b>".round($tcarbs,2)."</b></td>
-    <td><b>".round($tfats,2)."</b></td>
-    <td><b>".round($tprots,2)."</b></td>
-    <td><b>".round($talcohol,2)."</b></td>
-    <td><b>".round($twater,2)."</b></td>
-    <td><b>".round($tfiber,2)."</b></td>
-    <td><b>".round($tenergy,2)."</b></td>
+    <td><b>".htmlspecialchars(round($tamount,2))."</b> </td>
+    <td><b>".htmlspecialchars(round($tcarbs,2))."</b></td>
+    <td><b>".htmlspecialchars(round($tfats,2))."</b></td>
+    <td><b>".htmlspecialchars(round($tprots,2))."</b></td>
+    <td><b>".htmlspecialchars(round($talcohol,2))."</b></td>
+    <td><b>".htmlspecialchars(round($twater,2))."</b></td>
+    <td><b>".htmlspecialchars(round($tfiber,2))."</b></td>
+    <td><b>".htmlspecialchars(round($tenergy,2))."</b></td>
     <td><b></b></td>
 </tr>";
     echo "</table>";
